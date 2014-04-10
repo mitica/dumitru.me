@@ -1,0 +1,57 @@
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+html,body{
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+#page{
+	height:100%;
+}
+
+@media only screen
+and (min-width : 768px) {
+	#page-header{
+		height: 100%;
+		float: left;
+		width: 30%;
+	}
+	#page-content{
+		height: 100%;
+		float: right;
+		width: 70%;
+	}
+}
+#page-header{
+	background: #555;
+	color: #fff;
+}
+#page-content{
+	background: #e6e7e8;
+}
+
+#page-header > .inner, #page-content > .inner{
+	padding: 10px;
+}

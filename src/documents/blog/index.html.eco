@@ -1,0 +1,7 @@
+---
+title: "Blog"
+layout: "default"
+---
+
+<h1>Posts</h1>
+<%- @partial('posts-list', false, {list: @db(@getCollection('html')).blog.latest()}) %>

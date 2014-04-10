@@ -1,0 +1,11 @@
+<div class="list post">
+	<% for item in @list: %>
+		<div class="list-item">
+			<div class="post-header">
+				<h3><a href="<%= item.url %>" title="<%= item.title %>"><%= item.title %></a></h3>
+			</div>
+			<div class="post-body"><%- item.contentRenderedWithoutLayouts %></div>
+			<div class="post-footer"><span class="date"><%= item.date.toLocaleDateString() %></span></div>
+		</div>
+	<% end %>
+</div>
