@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/_main.css?v=<%- @site.version %>">
+    <link rel="alternate" type="application/rss+xml" title="dumitru.me - Blog" href="http://<%- @site.host %>/rss.xml">
 </head>
 <body>
 	<!--[if lt IE 7]>
@@ -17,21 +18,33 @@
     <div id="page">
     	<div id="page-header">
     		<div class="inner">
-    			header
-    			<div class="tags">
-    				<% for tag in blog.tags(blog.posts()).list(): %>
-    				<a href="/tags/<%= tag.slug %>/" class="tag"><%= tag.name %><span class="count"><%- tag.count %></span></a>
-    				<% end %>
+    			<div class="header-line">
+    				<div id="header-brand">
+    					<a id="brand-image" href="/"></a>
+    					<h3 id="brand-title"><%= @site.host %></h3>
+    					<p id="brand-motto"><%= @site.motto %></p>
+    				</div>
+    			</div>
+    			<div class="header-line">
+    				<h4>Tags</h4>
+	    			<div class="tags">
+	    				<% for tag in blog.tags(@getCollection('blog').toJSON()).list(): %>
+	    				<a href="<%= tag.url %>" class="tag <%- if tag.url==@document.url then "active" else "inative" %>"><span class="name"><%= tag.name %></span><span class="count"><%- tag.count %></span></a>
+	    				<% end %>
+	    			</div>
     			</div>
     		</div>
     	</div>
     	<div id="page-content">
     		<div class="inner">
     			<div id="content-nav">
-    				<div>
+    				<div id="nav-sections">
     					<% for item in @sections.all(): %>
     					<a href="/<%= item.slug %>/" class="<%- item.slug %> <%- if @sections.inSection(item.slug,@document.url) then "active" else "inactive" %>"><%= item.name %></a>
     					<% end %>
+    				</div>
+    				<div id="nav-more">
+    					<a href="/rss.xml">rss</a>
     				</div>
     			</div>
     			<div id="content-body">
