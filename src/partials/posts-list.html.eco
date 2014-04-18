@@ -1,18 +1,5 @@
 <div class="list post">
 	<% for item in @list: %>
-		<div class="list-item">
-			<div class="post-header">
-				<h3><a href="<%= item.url %>" title="<%= item.title %>"><%= item.title %></a></h3>
-			</div>
-			<div class="post-body"><%- item.contentRenderedWithoutLayouts %></div>
-			<div class="post-footer">
-        <span class="date"><span class="bull">&bull;</span> <%= item.date.toLocaleDateString() %></span>
-        <div class="tags">
-        <% for tag in item.tags: %>
-        <a href="/tags/<%= tag.toLowerCase().replace(' ','-','g') %>.html"><%= tag %></a>
-        <% end %>
-        </div>
-      </div>
-		</div>
+		<%- @partial('post-content', false, {item: item, moment: @moment}) %>
 	<% end %>
 </div>

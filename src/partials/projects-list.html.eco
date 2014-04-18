@@ -1,0 +1,12 @@
+<ul class="list project">
+  <% for item in @list: %>
+    <li class="list-item">
+      <% rdate = new Date(item.projReleaseDate) if item.projReleaseDate %>
+        <h3>
+          <a href="<%= item.url %>" title="<%= item.title %>"><%= item.title %></a>
+          <sup class="<%- if item.projIsAlive then 'alive' else 'dead' %>"><%- if rdate then rdate.getFullYear() else '...' %></sup>
+        </h3>
+        <p><%= item.summary %></p>
+    </li>
+  <% end %>
+</ul>

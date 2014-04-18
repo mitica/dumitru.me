@@ -5,14 +5,13 @@ layout: "default"
 <% nextPost = blog.next(@document.url) %>
 <% prevPost = blog.prev(@document.url) %>
 
-<article class="post">
-	<head>
-		<h1><%= @document.title %></h1>
-	</head>
-	<div class="post-body">
-		<%- @content %>
-	</div>
-</article>
+<div class="post">
+<div class="post-header">
+  <h1><%= @document.title %></h1>
+  <div class="item-details"><%= @moment(@document.date).format('dddd, Do MMM YYYY') %></div>
+</div>
+<%- @partial('post-content', false, {item: @document, moment: @moment, showHeader: false}) %>
+</div>
 <% if prevPost: %>
 <a class="nav-link" href="<%= prevPost.url %>"><%= prevPost.title %></a>
 <% end %>

@@ -4,14 +4,14 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     concat: {
       options: {
-        separator: ';'
+        separator: ''
       },
       js: {
         src: ['src/files/js/vendor/*.js','src/js/*.js'],
         dest: 'out/js/_main.js'
       },
       css: {
-        src: ['src/files/css/*.css','out/css/root.css'],
+        src: ['src/files/css/*.css','out/css/root.css','out/css/lists.css','out/css/post.css'],
         dest: 'out/css/_main.css'
       }
     },

@@ -2,6 +2,18 @@
 @import "variables.less";
 @import "mixins.less";
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .hidden {
     display: none !important;
     visibility: hidden;
@@ -121,7 +133,7 @@ and (min-width : 768px) {
 }
 #content-nav{
 	padding: 10px 16px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid @simple-color;
 	#nav-sections{
 		a{
 			display: inline-block;
@@ -130,6 +142,7 @@ and (min-width : 768px) {
 			.border-radius(3px);
 			margin-right: 5px;
 			text-decoration: none;
+			color: @text-color;
 
 			&:hover{
 				background:@simple-back-color;
@@ -152,22 +165,10 @@ and (min-width : 768px) {
 }
 
 /*
-  posts
-*/
-
-.post{
-  .post-footer{
-    margin-bottom: 20px;
-    border-bottom: 2px dotted #ddd;
-    padding-bottom: 20px;
-  }
-}
-
-/*
   footer
 */
 #content-footer{
-	border-top:1px solid #ddd;
+	border-top:1px solid @simple-color;
 	font-size: 90%;
 	padding: 10px 16px;
 	color:#777;

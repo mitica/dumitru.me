@@ -2,16 +2,7 @@
 layout: "default"
 ---
 <% blog = @db(@getCollection('html')).blog %>
-<% nextPost = blog.next(@document.url) %>
-<% prevPost = blog.prev(@document.url) %>
-
-<%- JSON.stringify(blog) %>
-<article class="post">
-	<head>
-		<h1><%= @document.title %></h1>
-	</head>
-	<div class="post-body">
-		<% tag = JSON.parse(@content) %>
-		<%- @partial('posts-list', false, {list: @getCollection('blog').findAll({tags: '$in': [tag.tag]}).toJSON()}) %>
-	</div>
+<h1><%= @document.title %></h1>
+<% tag = JSON.parse(@content) %>
+<%- @partial('posts-list', false, {list: @getCollection('blog').findAll({tags: '$in': [tag.tag]}).toJSON(), moment: @moment, partial: @partial}) %>
 </article>

@@ -1,7 +1,9 @@
 # DocPad Configuration File
 # http://docpad.org/docs/config
 
+moment = require 'moment'
 
+moment.lang('ro');
 
 # Define the DocPad Configuration
 docpadConfig = {
@@ -18,6 +20,8 @@ docpadConfig = {
 
 		getTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
 
+		moment: moment
+
 		sections:
 			all: -> [{name:"Proiecte",slug:"projects"},{name:"Blog",slug:"blog"}]
 
@@ -32,6 +36,7 @@ docpadConfig = {
 				if slug == 'blog'
 					url.indexOf("/" + slug) == 0 or url.indexOf('/tags/') > -1
 				else url.indexOf("/" + slug) == 0
+
 		db: (collection) ->
 			blog:
 				posts: ->
@@ -110,9 +115,9 @@ docpadConfig = {
 			extension: '.html.eco'
 			relativeDirPath: 'tags'
 			injectDocumentHelper: (document) ->
-				document.setMeta(
-					layout: 'tag'
-				)
+				document.setMeta(layout: 'tag')
+		cleanurls:
+			static: true
 
 
 	collections:
@@ -122,11 +127,11 @@ docpadConfig = {
 
 		# This one, will fetch in all documents that have the tag "post" specified in their meta data
 		projects: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: 'projects'},[date:-1])
+			@getCollection('documents').findAllLive({relativeOutDirPath: /projects/, isProject: true}, [date:-1])
 
 		# This one, will fetch in all documents that have the tag "post" specified in their meta data
 		blog: ->
-			@getCollection('documents').findAll({relativeOutDirPath: 'blog', isPost: true},[{date:-1}])
+			@getCollection('documents').findAllLive({relativeOutDirPath: 'blog', isPost: true}, [{date:-1}])
 		#database.findAllLive({relativeOutDirPath: 'blog'},[date:-1])
 
 }

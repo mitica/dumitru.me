@@ -38,13 +38,13 @@
     	<div id="page-content">
     		<div class="inner">
     			<div id="content-nav">
+                    <div id="nav-more">
+                        <a href="/rss.xml">rss</a>
+                    </div>
     				<div id="nav-sections">
     					<% for item in @sections.all(): %>
     					<a href="/<%= item.slug %>/" class="<%- item.slug %> <%- if @sections.inSection(item.slug,@document.url) then "active" else "inactive" %>"><%= item.name %></a>
     					<% end %>
-    				</div>
-    				<div id="nav-more">
-    					<a href="/rss.xml">rss</a>
     				</div>
     			</div>
     			<div id="content-body">

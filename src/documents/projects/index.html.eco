@@ -1,0 +1,18 @@
+---
+layout: 'default'
+title: 'Proiecte'
+---
+<% activeList=@getCollection('projects').findAllLive({projIsAlive:true}).toJSON() %>
+<% inactiveList=@getCollection('projects').findAllLive({projIsAlive:false}).toJSON() %>
+
+<h1>Proiecte</h1>
+<p>
+  Mai jos găsiți lista de proiecte active și cea de proiecte inactive, sau încercări/nereușire, experiențe.
+</p>
+
+<h2>Proiecte active <sup><%- activeList.length %></sup></h2>
+<%- @partial('projects-row-list', false, {list: activeList}) %>
+
+<h2>Proiecte inactive <sup><%- inactiveList.length %></sup></h2>
+<p>Eu mă mândresc mult cu proiectele mele nereușite(...). Multe dintre aceste proiecte m-am învățat mai multe decât unele priecte reușite</p>
+<%- @partial('projects-row-list', false, {list: inactiveList}) %>

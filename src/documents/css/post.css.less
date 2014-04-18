@@ -1,0 +1,36 @@
+
+@import "variables.less";
+@import "mixins.less";
+
+.post{
+  max-width: 900px;
+
+  .post-footer{
+    margin: 10px 0px;
+    .tags{
+      border-radius: 3px;
+      background: lighten(@simple-color,2%);
+      display: inline-block;
+      a{
+        display: inline-block;
+        padding: 6px 12px;
+        color: @text-color;
+        text-decoration: none;
+        border-right: 1px solid @simple-back-color;
+        float: left;
+        //.box-shadow(inset -5px -5px 5px #888);
+
+        &:hover{
+          background: @green-color;
+          color: @green-color-on;
+        }
+        &:first-child{
+          .border-left-radius(3px);
+        }
+        &:last-child{
+          .border-right-radius(3px);
+        }
+      }
+    }
+  }
+}
