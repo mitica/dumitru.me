@@ -15,8 +15,8 @@ docpadConfig = {
 			title: "dumitru.me"
 			version: 0.1
 			host: 'dumitru.me'
-			motto: 'Freelancing cu placere'
-			link: 'http://dumitru.me'
+			motto: 'Coding din plăcere'
+			url: 'http://dumitru.me'
 
 		getTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
 
@@ -116,8 +116,6 @@ docpadConfig = {
 			relativeDirPath: 'tags'
 			injectDocumentHelper: (document) ->
 				document.setMeta(layout: 'tag')
-		cleanurls:
-			static: true
 
 
 	collections:
