@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         dest: 'out/js/_main.js'
       },
       css: {
-        src: ['src/files/css/*.css','out/css/root.css','out/css/lists.css','out/css/post.css'],
+        src: ['src/files/css/*.css','out/css/root.css','out/css/lists.css','out/css/post.css','out/css/project.css'],
         dest: 'out/css/_main.css'
       }
     },

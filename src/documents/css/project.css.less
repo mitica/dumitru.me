@@ -1,0 +1,42 @@
+
+@import "variables.less";
+@import "mixins.less";
+
+#project-page{
+  #project-header{
+    margin-bottom: 20px;
+    h1{
+      margin-bottom: 0px;
+      sup{
+        font-weight: normal;
+      }
+    }
+    .details{
+      color: @simple-text-color;
+    }
+  }
+
+  .project-details{
+    display: block;
+    float: left;
+    margin: 0px 20px 20px 0px;
+    font-size: 90%;
+
+    .media{
+      background-color: #fff;
+      padding: 3px;
+      border:1px solid #ddd;
+      border-radius: 3px;
+      width: 150px;
+      height: 150px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  #project-body{
+    padding-bottom: 20px;
+  }
+}

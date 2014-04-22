@@ -17,6 +17,7 @@ docpadConfig = {
 			host: 'dumitru.me'
 			motto: 'Coding din plăcere'
 			url: 'http://dumitru.me'
+			feed: 'http://feeds.feedburner.com/dumitru'
 
 		getTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
 

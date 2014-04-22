@@ -1,4 +1,28 @@
 ---
 layout: "default"
 ---
-<h1><%= @document.title %></h1>
+<% rdate = new Date(@document.projReleaseDate) if @document.projReleaseDate %>
+
+<div id="project-page">
+<div id="project-header">
+<h1><%= @document.title %> <sup>(<%= rdate.getFullYear() %>)</sup></h1>
+<div class="details"><%= @document.summary %></div>
+</div>
+
+<div id="project-body" class="clearfix">
+  <div class="project-details">
+    <div class="media">
+      <img src="<%- @document.posterSrc %>" alt="<%= @document.title %>" />
+    </div>
+    <% if @document.projLinks: %>
+      <% for link in @document.projLinks: %>
+      <p>&bull; <a href="<%= link %>"><%= link %></a>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="project-content clearfix">
+    <%- @content %>
+  </div>
+</div>
+
+</div>

@@ -9,6 +9,6 @@ De ceva timp căutam o platformă de blogging care să satisfacă cerințele/mof
 
 M-am oprit asupra [DocPad](http://docpad.org).
 
-Pe acest blog voi scrie (sper mai des) despre proiectele mele și despre experianța mea în lumea IT.
+Pe acest blog voi scrie (sper mai des) despre proiectele mele și despre experiența mea în lumea IT.
 
 Cine este interesat de codul sursă a acestui blog îl găsește pe [Github](https://github.com/Mitica/dumitru.me).
