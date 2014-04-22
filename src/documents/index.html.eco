@@ -1,7 +1,13 @@
 ---
-title: "Welcome!"
+title: "Coding cu plăcere!"
 layout: "default"
 isPage: true
 ---
 
-<p>Welcome to My Website!</p>
+<h1>Bun venit!</h1>
+<p>Eu sunt Dumitru și acesta este un site personal al unui <a href="http://ro.wikipedia.org/wiki/Dezvoltator_web" target="_blank">dezvoltator Web</a>.</p>
+<p>Lectură lăcută!</p>
+
+
+<h2>Blog</h2>
+<%- @partial('posts-list', false, {list: @db(@getCollection('html')).blog.latest(), moment: @moment, partial: @partial }) %>
