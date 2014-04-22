@@ -40,7 +40,7 @@ docpadConfig = {
 		db: (collection) ->
 			blog:
 				posts: ->
-					collection.findAllLive({relativeOutDirPath: 'blog', isPost:true},[{date:-1}]).toJSON()
+					collection.findAllLive({relativeOutDirPath: /blog/, isPost:true},[{date:-1}]).toJSON()
 
 				#postsByTag: (tag)->
 				#    collection.findAllLive({relativeOutDirPath: 'blog', isPost:true},[{date:-1}]).toJSON()
@@ -129,7 +129,7 @@ docpadConfig = {
 
 		# This one, will fetch in all documents that have the tag "post" specified in their meta data
 		blog: ->
-			@getCollection('documents').findAllLive({relativeOutDirPath: 'blog', isPost: true}, [{date:-1}])
+			@getCollection('documents').findAllLive({relativeOutDirPath: /blog/, isPost: true}, [{date:-1}])
 		#database.findAllLive({relativeOutDirPath: 'blog'},[date:-1])
 
 }
