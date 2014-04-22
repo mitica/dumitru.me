@@ -94,9 +94,6 @@ and (min-width : 768px) {
 #page-header{
 	background: @header-color;
 	color: @header-color-on;
-	a{
-		color:@second-color;
-	}
 	&> .inner{
 	padding: 10px;
 	}
@@ -128,9 +125,9 @@ and (min-width : 768px) {
 			}
 
 			&:hover,&.active{
-				background: @second-color;
+				background: @accent-color;
 				.count{
-					color:#fff;
+					color:@accent-color-on;
 				}
 			}
 		}
