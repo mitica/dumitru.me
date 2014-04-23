@@ -11,4 +11,6 @@ projVersion: '2.7'
 cid: 'proj-place'
 ---
 
-In curand...
+Despre acest proiect am forte multe de spus.
+
+Revin...
