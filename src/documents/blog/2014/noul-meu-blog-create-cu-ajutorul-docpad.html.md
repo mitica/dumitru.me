@@ -3,6 +3,7 @@ title: "Noul meu blog - create cu ajutorul DocPad"
 layout: "post"
 tags: ["DocPad","Blog"]
 isPost: true
+cid: 'p-14-1'
 ---
 
 De ceva timp căutam o platformă de blogging care să satisfacă cerințele/mofturile mele (ale unui dezvoltator web).

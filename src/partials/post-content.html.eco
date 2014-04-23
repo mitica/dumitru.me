@@ -1,14 +1,17 @@
 <% if @showHeader==undefined or @showHeader==true: %>
 <div class="post-header">
-  <h3><a href="<%= @item.url %>" title="<%= @item.title %>"><%= @item.title %></a></h3>
-  <div class="item-details"><%= @moment(@item.date).format('dddd, Do MMM YYYY') %></div>
+	<h3><a href="<%= @item.url %>" title="<%= @item.title %>"><%= @item.title %></a></h3>
+	<div class="item-details"><%= @moment(@item.date).format('dddd, Do MMM YYYY') %></div>
 </div>
 <% end %>
-  <div class="post-body"><%- @item.contentRenderedWithoutLayouts %></div>
-  <div class="post-footer">
-    <div class="tags">
-    <% for tag in @item.tags: %>
-      <a href="/tags/<%= tag.toLowerCase().replace(' ','-','g') %>.html"><%= tag %></a>
-    <% end %>
-  </div>
+	<div class="post-body"><%- @item.contentRenderedWithoutLayouts %></div>
+	<div class="post-footer">
+	<% if @showShare: %>
+	<%- @partial('sharedata', false, { data: { identifier: @getCanonical(), title: @getTitle(), cid: @item.cid } }) %>
+	<% end %>
+		<div class="tags">
+		<% for tag in @item.tags: %>
+			<a href="/tags/<%= tag.toLowerCase().replace(' ','-','g') %>.html"><%= tag %></a>
+		<% end %>
+	</div>
 </div>
