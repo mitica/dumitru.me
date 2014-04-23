@@ -19,6 +19,8 @@ docpadConfig = {
 			url: 'http://dumitru.me'
 			feed: 'http://feeds.feedburner.com/dumitru'
 
+		getCanonical: -> if @document.url then "#{@site.url}#{@document.url}" else "#{@site.url}/"
+
 		getTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
 
 		moment: moment

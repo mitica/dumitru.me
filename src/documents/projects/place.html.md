@@ -8,6 +8,7 @@ projName: 'Place.md'
 projIsAlive: false
 projReleaseDate: '2008-07-14'
 projVersion: '2.7'
+cid: 'proj-place'
 ---
 
 In curand...

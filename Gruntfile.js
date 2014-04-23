@@ -7,11 +7,11 @@ module.exports = function(grunt) {
         separator: ''
       },
       js: {
-        src: ['src/files/js/vendor/*.js','src/js/*.js'],
+        src: ['src/files/js/vendor/*.js','src/files/js/*.js'],
         dest: 'out/js/_main.js'
       },
       css: {
-        src: ['src/files/css/*.css','out/css/root.css','out/css/lists.css','out/css/post.css','out/css/project.css'],
+        src: ['src/files/css/*.css','out/css/root.css','out/css/lists.css','out/css/post.css','out/css/project.css','out/css/sharedata.css'],
         dest: 'out/css/_main.css'
       }
     },

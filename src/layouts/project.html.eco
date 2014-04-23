@@ -3,7 +3,7 @@ layout: "default"
 ---
 <% rdate = new Date(@document.projReleaseDate) if @document.projReleaseDate %>
 
-<div id="project-page">
+<div id="project-page" class="<%- if @document.projIsAlive then 'alive' else 'dead' %>">
 <div id="project-header">
 <h1><%= @document.title %> <sup>(<%= rdate.getFullYear() %>)</sup></h1>
 <div class="details"><%= @document.summary %></div>
@@ -11,15 +11,32 @@ layout: "default"
 
 <div id="project-body" class="clearfix">
   <div class="project-details">
-    <div class="media">
-      <img src="<%- @document.posterSrc %>" alt="<%= @document.title %>" />
-    </div>
-    <% if @document.projLinks: %>
-      <% for link in @document.projLinks: %>
-      <p>&bull; <a href="<%= link %>"><%= link %></a>
-      <% end %>
+  <div class="panel">
+    <div class="panel-title"><h4><%= @document.title %></h4></div>
+    <div class="panel-content">
+    <% if @document.posterSrc: %>
+      <div class="media">
+        <img src="<%- @document.posterSrc %>" alt="<%= @document.title %>" />
+      </div>
     <% end %>
-  </div>
+    </div>
+    <div class="panel-footer">
+      <p class="state"><strong>Stare:</strong> <em><%- if @document.projIsAlive then 'Activ' else 'Inactiv' %></em></p>
+    <% if @document.projLinks: %>
+    <dl>
+      <dt>Linkuri:</dt>
+      <dd>
+        <% for link in @document.projLinks: %>
+        <p>&bull; <a href="<%= link %>"><%= link.replace('http://','') %></a></p>
+        <% end %>
+      </dd>
+    </dl>
+    <% end %>
+    </div>
+  </div> <!--/panel -->
+  <%- @partial('sharedata', false, { data: { identifier: @getCanonical(), title: @getTitle(), cid: @document.cid } }) %>
+</div> <!-- /project-details -->
+
   <div class="project-content clearfix">
     <%- @content %>
   </div>

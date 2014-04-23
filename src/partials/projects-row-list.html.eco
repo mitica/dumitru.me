@@ -1,13 +1,13 @@
 <div class="list project row clearfix">
   <% for item in @list: %>
     <div class="list-item col-md-4 col-sm-6">
-      <div class="item project <%- if item.projIsAlive then 'alive' else 'dead' %>">
+      <div class="panel item project <%- if item.projIsAlive then 'alive' else 'dead' %>">
       <% rdate = new Date(item.projReleaseDate) if item.projReleaseDate %>
-        <h3>
+        <h3 class="panel-title">
           <a href="<%= item.url %>" title="<%= item.title %>"><%= item.title %></a>
           <sup><%- if rdate then rdate.getFullYear() else '...' %></sup>
         </h3>
-        <p><%= item.summary %></p>
+        <p class="panel-content"><%= item.summary %></p>
       </div>
     </div>
   <% end %>

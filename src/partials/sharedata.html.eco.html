@@ -1,0 +1,15 @@
+
+<div class="our-sharedata" data-appname="dumitru" data-identifier="<%= @data.identifier %>" data-title="<%= @data.title %>" data-cid="<%= @data.cid %>">
+<a class="our-share-item facebook" data-service="facebook" href="http://www.facebook.com/sharer/sharer.php?u=<%= encodeURIComponent(@data.identifier) %>" rel="nofollow" target="_blank" title="Trimite pe Facebook">
+		<span class="share-icon"><i></i></span><span class="share-count hidden"></span>
+</a>
+<a class="our-share-item twitter" data-service="twitter" href="http://twitter.com/share?url=<%= encodeURIComponent(@data.identifier) %>&amp;text=<%= encodeURIComponent(@data.title) %>" rel="nofollow" target="_blank" title="Trimite pe Twitter">
+		<span class="share-icon"><i></i></span><span class="share-count hidden"></span>
+</a>
+<a class="our-share-item odnoklassniki" data-service="odnoklassniki" href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st._surl=<%= encodeURIComponent(@data.identifier) %>" rel="nofollow" target="_blank" title="<%= @data.title %>">
+		<span class="share-icon"><i></i></span><span class="share-count hidden"></span>
+</a>
+<a class="our-share-item google-plus" data-service="google-plus" href="http://plus.google.com/share?url=<%= encodeURIComponent(@data.identifier) %>" rel="nofollow" target="_blank" title="Trimite pe Google-plus">
+		<span class="share-icon"><i></i></span><span class="share-count hidden"></span>
+</a>
+</div>

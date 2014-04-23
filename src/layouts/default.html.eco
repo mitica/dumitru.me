@@ -4,70 +4,75 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="ro"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="ro"> <!--<![endif]-->
 <head>
-    <title><%= @getTitle() %></title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/_main.css?v=<%- @site.version %>">
-    <link rel="alternate" type="application/rss+xml" title="dumitru.me - Blog" href="<%- @site.feed %>">
+		<title><%= @getTitle() %></title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/css/_main.css?v=<%- @site.version %>">
+		<link rel="alternate" type="application/rss+xml" title="dumitru.me - Blog" href="<%- @site.feed %>">
 </head>
 <body>
 	<!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <div id="page">
-    	<div id="page-header">
-    		<div class="inner">
-    			<div class="header-line">
-    				<div id="header-brand">
-    					<a id="brand-image" href="/"></a>
-    					<h3 id="brand-title"><%= @site.host %></h3>
-    					<p id="brand-motto"><%= @site.motto %></p>
-    				</div>
-    			</div>
-    			<div class="header-line">
-    				<h4>Tags</h4>
-	    			<div class="tags">
-	    				<% for tag in blog.tags(@getCollection('blog').toJSON()).list(): %>
-	    				<a href="<%= tag.url %>" class="tag <%- if tag.url==@document.url then "active" else "inative" %>"><span class="name"><%= tag.name %></span><span class="count"><%- tag.count %></span></a>
-	    				<% end %>
-	    			</div>
-    			</div>
-    		</div>
-    	</div>
-    	<div id="page-content">
-    		<div class="inner">
-    			<div id="content-nav">
-                    <div id="nav-more">
-                        <a href="<%- @site.feed %>"><img src="http://feeds.feedburner.com/~fc/dumitru?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-                    </div>
-    				<div id="nav-sections">
-    					<% for item in @sections.all(): %>
-    					<a href="/<%= item.slug %>/" class="<%- item.slug %> <%- if @sections.inSection(item.slug,@document.url) then "active" else "inactive" %>"><%= item.name %></a>
-    					<% end %>
-    				</div>
-    			</div>
-    			<div id="content-body">
-    				<div class="inner">
-    					<%- @content %>
-    				</div>
-    			</div>
-    			<div id="content-footer">
-    				<strong>dumitru.me</strong> &bull; Site personal / Creat cu ajutorul <a rel="nofollow" target="_blank" href="http://docpad.org">DocPad</a>
-    			</div>
-    		</div>
-    	</div>
-    </div>
+						<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+				<![endif]-->
+		<div id="page">
+			<div id="page-header">
+				<div class="inner">
+					<div class="header-line">
+						<div id="header-brand">
+							<a id="brand-image" href="/"></a>
+							<h3 id="brand-title"><%= @site.host %></h3>
+							<p id="brand-motto"><%= @site.motto %></p>
+						</div>
+					</div>
+					<div class="header-line">
+						<h4>Tags</h4>
+						<div class="tags">
+							<% for tag in blog.tags(@getCollection('blog').toJSON()).list(): %>
+							<a href="<%= tag.url %>" class="tag <%- if tag.url==@document.url then "active" else "inative" %>"><span class="name"><%= tag.name %></span><span class="count"><%- tag.count %></span></a>
+							<% end %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="page-content">
+				<div class="inner">
+					<div id="content-nav">
+										<div id="nav-more">
+												<a href="<%- @site.feed %>"><img src="http://feeds.feedburner.com/~fc/dumitru?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+										</div>
+						<div id="nav-sections">
+							<% for item in @sections.all(): %>
+							<a href="/<%= item.slug %>/" class="<%- item.slug %> <%- if @sections.inSection(item.slug,@document.url) then "active" else "inactive" %>"><%= item.name %></a>
+							<% end %>
+						</div>
+					</div>
+					<div id="content-body">
+						<div class="inner">
+							<%- @content %>
+						</div>
+					</div>
+					<div id="content-footer">
+						<div class="row">
+							<div class="col-md-6">
+								<strong>dumitru.me</strong> &bull; Site personal / Creat cu ajutorul <a rel="nofollow" target="_blank" href="http://docpad.org">DocPad</a>
+							</div>
+							<div class="col-md-6"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="/js/_main.min.js?<%- @site.version %>"></script>
+<script type="text/javascript" src="/js/_main.min.js?v=<%- @site.version %>"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-50261796-1', 'dumitru.me');
-  ga('send', 'pageview');
+	ga('create', 'UA-50261796-1', 'dumitru.me');
+	ga('send', 'pageview');
 
 </script>
 </body>
