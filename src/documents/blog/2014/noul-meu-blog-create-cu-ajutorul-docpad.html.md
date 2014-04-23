@@ -1,5 +1,5 @@
 ---
-title: "Noul meu blog - create cu ajutorul DocPad"
+title: "Noul meu blog - creat cu ajutorul DocPad"
 layout: "post"
 tags: ["DocPad","Blog"]
 isPost: true
