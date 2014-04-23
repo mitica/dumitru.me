@@ -55,7 +55,7 @@
 					<div id="content-footer" class="clearfix">
 						<div class="row">
 							<div class="col-md-6">
-								<strong>dumitru.me</strong> &bull; Site personal / Creat cu ajutorul <a rel="nofollow" target="_blank" href="http://docpad.org">DocPad</a>
+								<strong>dumitru.me</strong> (v<%- @site.version %>) &bull; Site personal / Creat cu ajutorul <a rel="nofollow" target="_blank" href="http://docpad.org">DocPad</a>
 							</div>
 							<div class="col-md-6"></div>
 						</div>
