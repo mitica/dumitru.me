@@ -14,5 +14,5 @@ title: 'Proiecte'
 <%- @partial('projects-row-list', false, {list: activeList}) %>
 
 <h2>Proiecte inactive <sup><%- inactiveList.length %></sup></h2>
-<p>Eu mă mândresc mult cu proiectele mele nereușite(...). Multe dintre aceste proiecte m-am învățat mai multe decât unele priecte reușite</p>
+<p>Eu mă mândresc mult cu proiectele mele nereușite(...). Multe dintre aceste proiecte m-au învățat mai multe decât unele proiecte reușite</p>
 <%- @partial('projects-row-list', false, {list: inactiveList}) %>
