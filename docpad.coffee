@@ -93,7 +93,8 @@ docpadConfig = {
 							if post.tags && post.tags.length > 0
 								for tag in post.tags
 									tag = tag.trim()
-									slug = tag.replace(' ', '-', 'g').toLowerCase()
+									slug = tag.replace(' ', '-', 'g').replace('.', '-', 'g').replace('C#', 'c-sharp', 'g').toLowerCase()
+									slug = 'dot-net' if slug == '-net'
 									t = {slug: slug, name: tag, count: 1, url: "/tags/#{slug}.html"}
 
 									if exists(t.slug)
