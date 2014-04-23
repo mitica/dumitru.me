@@ -13,7 +13,7 @@ docpadConfig = {
 	templateData:
 		site:
 			title: "dumitru.me"
-			version: 0.1
+			version: '0.1.2'
 			host: 'dumitru.me'
 			motto: 'Coding din plăcere'
 			url: 'http://dumitru.me'
