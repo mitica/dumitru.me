@@ -1,0 +1,80 @@
+---
+title: "Entipic - o imagine pentru fiecare subiect"
+layout: "post"
+tags: ["Entipic"]
+isPost: true
+cid: 'p-14-2'
+---
+
+Numele <a href="http://entipic.com/" target="_blank">Entipic</a> vine de la 'Entity picture'. Ideea proiectului este de a oferi pentru fiecare topic/entitate popular/ă o imagine reprezentativă.
+
+Proiectul seamănă cu [Gravatar](http://gravatar.com): dacă Gravatar oferă o imagine pentru fiecare adresă de email __cunoscută__ (de sistem), atunci Entipic oferă o imagine pentru fiecare topic __popular__ (ex: Bill Gates, Vlad Filat, Chișinău, CEDO, etc.).
+
+Cel mai simplu de înțeles ar fi print-un exemplu: voi folosi [Opinia de pe Click.md](http://opinia.click.md).
+
+<%- @partial("post-image", false, {src:"/img/blog/opinia-click.png", alt:"opinia.click.md", title:"opinia.click.md", caption:"Exemplu de imagini asociate unor entități populare", align: "center", size:"big"}) %>
+
+În imaginea de mai sus vedem personalități și, alături, imaginea (fața) acestora. Anume în felul acesta conținutul site-ului devine mai clar și mai atractiv.
+
+## Problema
+
+La prima vedere, să am la mine pe site o imagine asociată unei entități, pare ceva foarte simplu. Dar, în realitate, este o problemă foarte neplăcută și complicată. E clar că această problemă poate fi neînsemnată atunci când numărul entităților este mic și constant.
+
+Pentru a soluționa această problemă avem nevoie de:
+
+*  Căutarea și redactarea imaginilor pentru fiecare entitate (mult lucru manual);
+*  Mărimi diferite (de regulă aceeași imagine o vom folosi cu diferite mărimi);
+*  Menținerea unei legături între imagine și entitatea din baza de date;
+*  Stocare pe server și transfer la client;
+
+## Soluție
+
+Cea mai bună soluție, după părerea mea, ar fi ca un serviciu să preia toată această funcționalitate.
+
+Astfel serviuciul ar veni doar cu o adresă de la care putem cere imagini.
+
+## Entipic
+
+V-ați prins! <a href="http://entipic.com/" target="_blank">Entipic.com</a> este acel serviciu.
+
+Dar, să vedem cum funcționează și cum poate fi folosit. În primul rând, e bine de știut că Entipic funcționează fără intervenția umană.
+
+### Cum funcționează
+
+Voi explica pe baza unui exemplu concret. Presupunem că un site face următoarea cerere: http://cdn.entipic.com/md/traian-basescu.jpg
+
+Sistemul reacționează (forma simplă):
+
+1.  Normalizează numele cerut (__traian-basescu__);
+2.  Dacă pentru acest nume sistemul deține o imagine, atunci o returnează, în caz contrar returnează o imagine temporară și trece la pasul 3;
+3.  Salvează numele cerut (__traian-basescu__) ca nume nou;
+4.  Periodic, un modul, caută imagini pe internet pentru fiecare nume nou;
+
+### Cum poate fi folosit
+
+Unicul lucru care trebuie reținut este adresa unei imagini: ``http://cdn.entipic.com/[context]/[size]_[name].jpg``
+
+Unde:
+
+*  __[context]__ (_opțional_) - este codul țării din 2 litere (md, ro, ru, etc.). Contextul este necesar mai ales când cerem __[name]__ scurt(...). Dacă site-ul nostru este din România vom folosi codul __ro__.
+
+*  __[size]__ (_opțional_) - este mărimea dorită a imaginii, care este formată dintr-o literă. Poate fi: __x__ (25x25 px), __a__ (50x50 px), __b__ (100x100 px), __c__ (150x150 px). Dacă nu indicăm mărimea se va folosi __a__ (50x50 px).
+
+*  __[name]__ (_obligatoriu_) - este numele entității pentru care dorim o imagine. Poate conține între 2 și 50 de caractere. E de dorit ca __[name]__ să fie scris cu litere mici șă spațiile să fie înlocuite cu un minus(-).
+
+Nu contează forma de scriere a numelor: __traian-basescu__, __traian BaseScu__, __Traian Băsescu__ și chiar __TrăIAN Bășescu__ sunt identice pentru sistem. Ceea ce înseamnă că nu trebuie să cunoaștem ce nume folosește Entipic - noi doar vom cere o imagine folosind numele pe care îl cunoaște aplicația noastră.
+
+Dacă vom folosi numele __Траян Бэсеску__ Entipic va returna aceeași imagine ca și pentru __traian-basescu__, fiindcă este destul de inteligent pentru a căuta și cunoaște sinonime.
+
+
+### Performanță
+
+Entipic folosește pentru deservirea imaginilor u serviciu CDN. Deci, doar dacă imaginea lipsește în cache-ul CDN-ului se va observa încărcarea imaginii. Performanța se poate testa pe site-urile care folosesc Entipic: www.click.md sau www.ournet.ro
+
+Toate imaginile sunt stocate pe Amazon S3.
+
+### Condiții de utilizare
+
+Serviciul este gratuit, deci poate fi folosit de orice aplicațe/site.
+
+Din motive de securitate, pentru a putea cere de la Entipic imagini pentru __nume noi__ (necunoscute de Entipic), este necesar de înregistrat o aplicație pe Entipic.com

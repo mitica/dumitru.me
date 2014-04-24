@@ -17,6 +17,22 @@
     img{
       max-width: 100%;
     }
+    .post-image{
+      
+      .image{
+        max-width: 100%;
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid darken(@simple-back-color, 3%);
+        background-color: #fff;
+      }
+      .caption{
+        margin: 6px 0px;
+        color: @simple-text-color;
+        text-align: center;
+        font-weight: normal;
+      }
+    }
   }
 
   .post-footer{
@@ -55,4 +71,26 @@
 
 #post-comments{
   max-width: 700px;
+}
+
+#next-prev{
+  margin: 25px 0px 10px 0px;
+  height: 28px;
+  overflow: hidden;
+  max-width: 700px;
+
+  a{
+    display: inline-block;
+    max-width: 45%;
+    color: @text-color;
+    background-color: lighten(@simple-back-color, 5%);
+    border-radius: 3px;
+    padding: 4px 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  a.next{
+    float: right;
+  }
 }

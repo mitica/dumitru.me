@@ -1,0 +1,4 @@
+<div class="post-image<%= if @size then ' size-'+ @size %><%= if @align then ' align-'+ @align %>">
+  <div class="image"><img src="<%= @src %>" alt="<%= @alt %>" title="<%= @title %>"/></div>
+  <% if @caption: %><p class="caption"><%= @caption %></p><% end %>
+</div>

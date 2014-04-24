@@ -57,7 +57,7 @@ docpadConfig = {
 							return post
 					return null
 
-				next: (url)->
+				prev: (url)->
 					posts = this.posts()
 					for i in [0...posts.length]
 						post = posts[i]
@@ -65,7 +65,7 @@ docpadConfig = {
 							return posts[i+1]
 					return null
 
-				prev: (url)->
+				next: (url)->
 					posts = this.posts()
 					for i in [0...posts.length]
 						post = posts[i]
