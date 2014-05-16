@@ -2,7 +2,7 @@
 layout: 'default'
 title: 'Proiecte'
 ---
-<% activeList=@getCollection('projects').findAllLive({projIsAlive:true}).toJSON() %>
+<% activeList=@getCollection('projects').findAllLive({projIsAlive:true},[{projReleaseDate:-1}]).toJSON() %>
 <% inactiveList=@getCollection('projects').findAllLive({projIsAlive:false}).toJSON() %>
 
 <h1>Proiecte</h1>

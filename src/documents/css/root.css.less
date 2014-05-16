@@ -2,6 +2,36 @@
 @import "variables.less";
 @import "mixins.less";
 
+@font-face {
+    font-family: 'Tisa';
+    src: url('/fonts/ff-tisa.eot');
+    src: url('/fonts/ff-tisa.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/ff-tisa.woff') format('woff'),
+         url('/fonts/ff-tisa.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tisa';
+    src: url('/fonts/ff-tisa-italic.eot');
+    src: url('/fonts/ff-tisa-italic.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/ff-tisa-italic.woff') format('woff'),
+         url('/fonts/ff-tisa-italic.ttf')  format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Tisa';
+    src: url('/fonts/ff-tisa-bold.eot');
+    src: url('/fonts/ff-tisa-bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/ff-tisa-bold.woff') format('woff'),
+         url('/fonts/ff-tisa-bold.ttf')  format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -52,6 +82,7 @@ html,body{
 body{
 	color:#444;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	/*font-family: 'Tisa',Helvetica,Arial,sans-serif;*/
 	font-size: 14px;
 }
 a{
@@ -60,6 +91,9 @@ a{
 	&:hover{
 		text-decoration:underline;
 	}
+}
+p{
+	line-height: 1.4;
 }
 
 #page{
