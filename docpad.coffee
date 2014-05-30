@@ -113,8 +113,9 @@ docpadConfig = {
 
 	plugins:
 		rss:
-			collection: 'blog'
-			url: '/rss.xml' # optional, this is the default
+			default:
+				collection: 'blog'
+				url: '/rss.xml' # optional, this is the default
 		tags:
 			extension: '.html.eco'
 			relativeDirPath: 'tags'
