@@ -117,7 +117,7 @@ docpadConfig = {
 				collection: 'blog'
 				url: '/rss.xml' # optional, this is the default
 		tags:
-			extension: '.html.eco'
+			extension: '.html'
 			relativeDirPath: 'tags'
 			injectDocumentHelper: (document) ->
 				document.setMeta(layout: 'tag')
