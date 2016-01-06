@@ -4,6 +4,7 @@ layout: "post"
 tags: ["Entipic"]
 isPost: true
 cid: 'p-14-2'
+date: 2014-04-24T10:13:00
 ---
 
 Numele <a href="http://entipic.com/" target="_blank">Entipic</a> vine de la 'Entity picture'. Ideea proiectului este de a oferi pentru fiecare topic/entitate popular/ă o imagine reprezentativă.
@@ -41,22 +42,24 @@ Dar, să vedem cum funcționează și cum poate fi folosit. În primul rând, e 
 
 ### Cum funcționează
 
-Voi explica pe baza unui exemplu concret. Presupunem că un site face următoarea cerere: http://cdn.entipic.com/md/traian-basescu.jpg
+Voi explica pe baza unui exemplu concret. Presupunem că un site face următoarea cerere: http://cdn.entipic.com/ro/traian-basescu.jpg
 
 Sistemul reacționează (forma simplă):
 
 1.  Normalizează numele cerut (__traian-basescu__);
-2.  Dacă pentru acest nume sistemul deține o imagine, atunci o returnează, în caz contrar returnează o imagine temporară și trece la pasul 3;
+2.  Dacă pentru acest nume sistemul deține o imagine, atunci o returnează; în caz contrar, returnează o imagine temporară și trece la pasul 3;
 3.  Salvează numele cerut (__traian-basescu__) ca nume nou;
 4.  Periodic, un modul, caută imagini pe internet pentru fiecare nume nou;
 
 ### Cum poate fi folosit
 
-Unicul lucru care trebuie reținut este adresa unei imagini: ``http://cdn.entipic.com/[context]/[size]_[name].jpg``
+Unicul lucru care trebuie reținut este adresa unei imagini: ``http://cdn.entipic.com/[language]-[country]/[size]/[name].jpg``
 
 Unde:
 
-*  __[context]__ (_opțional_) - este codul țării din 2 litere (md, ro, ru, etc.). Contextul este necesar mai ales când cerem __[name]__ scurt(...). Dacă site-ul nostru este din România vom folosi codul __ro__.
+*  __[language]__ (_semi-opțional_) - este codul limbii din 2 litere (en, ro, ru, etc.). Codul limbii este necesar pentru a ajuta sistemul în procesul de căutare a imaginii corecte. De fapt, sistemul nu va căuta imagini pentru cuvinte/nume care nu au asociată limba.
+
+*  __[country]__ (_opțional_) - este codul țării din 2 litere (md, ro, ru, etc.). Acest cod este necesar mai ales când cerem __[name]__ scurt(...). Dacă site-ul nostru este din România vom folosi codul __ro__.
 
 *  __[size]__ (_opțional_) - este mărimea dorită a imaginii, care este formată dintr-o literă. Poate fi: __x__ (25x25 px), __a__ (50x50 px), __b__ (100x100 px), __c__ (150x150 px). Dacă nu indicăm mărimea se va folosi __a__ (50x50 px).
 
@@ -76,5 +79,3 @@ Toate imaginile sunt stocate pe Amazon S3.
 ### Condiții de utilizare
 
 Serviciul este gratuit, deci poate fi folosit de orice aplicațe/site.
-
-Din motive de securitate, pentru a putea cere de la Entipic imagini pentru __nume noi__ (necunoscute de Entipic), este necesar de înregistrat o aplicație pe Entipic.com

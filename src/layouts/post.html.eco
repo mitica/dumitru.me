@@ -10,7 +10,7 @@ layout: "default"
   <h1><%= @document.title %></h1>
   <div class="item-details"><%= @moment(@document.date).format('dddd, Do MMM YYYY') %></div>
 </div>
-<%- @partial('post-content', true, {item: @document, moment: @moment, showHeader: false, showShare: true}) %>
+<%- @partial('post-content', true, {item: @document, moment: @moment, showHeader: false, showShare: false}) %>
 </div>
 <div id="next-prev">
 <% if nextPost: %>
