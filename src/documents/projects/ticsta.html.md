@@ -5,7 +5,7 @@ title: "Ticsta"
 summary: "Serviciu de generare/administrare a website-uri statice"
 projUniqueName: 'ticsta'
 projName: 'Ticsta'
-projIsAlive: true
+projIsAlive: false
 projReleaseDate: '2014-10-01'
 projVersion: '0.1'
 #projLinks: ["http://entipic.com"]

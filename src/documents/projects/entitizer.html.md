@@ -5,7 +5,7 @@ title: "Entitizer"
 summary: "Smart Named Entity Extraction"
 projUniqueName: 'entitizer'
 projName: 'Entitizer'
-projIsAlive: true
+projIsAlive: false
 projReleaseDate: '2013-09-08'
 projVersion: '0.2'
 projLinks: ["http://entitizer.com"]

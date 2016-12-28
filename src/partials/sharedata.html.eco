@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="our-sharedata" data-appname="dumitru" data-identifier="<%= @data.identifier %>" data-title="<%= @data.title %>" data-cid="<%= @data.cid %>">
 <a class="our-share-item facebook" data-service="facebook" href="http://www.facebook.com/sharer/sharer.php?u=<%= encodeURIComponent(@data.identifier) %>" rel="nofollow" target="_blank" title="Trimite pe Facebook">
 		<span class="share-icon"><i></i></span><span class="share-count hidden"></span>
@@ -12,4 +12,4 @@
 <a class="our-share-item google-plus" data-service="google-plus" href="http://plus.google.com/share?url=<%= encodeURIComponent(@data.identifier) %>" rel="nofollow" target="_blank" title="Trimite pe Google-plus">
 		<span class="share-icon"><i></i></span><span class="share-count hidden"></span>
 </a>
-</div>
+</div> -->

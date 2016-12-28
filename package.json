@@ -7,14 +7,14 @@
     "npm": "1.3"
   },
   "dependencies": {
-    "docpad": "~6.69.1",
+    "docpad": "~6.79.0",
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-ect": "~2.0.1",
-    "docpad-plugin-ghpages": "~2.4.3",
+    "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-less": "~2.4.1",
-    "docpad-plugin-marked": "~2.2.1",
-    "docpad-plugin-partials": "~2.9.1",
-    "docpad-plugin-rss": "~2.1.4",
+    "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-partials": "~2.9.2",
+    "docpad-plugin-rss": "~2.3.1",
     "docpad-plugin-sunny": "~2.1.0",
     "docpad-plugin-tags": "~2.0.7",
     "moment": "~2.6.0",
@@ -22,7 +22,9 @@
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
-    "start": "node_modules/docpad/bin/docpad-server"
+    "start": "node_modules/docpad/bin/docpad-server",
+    "deploy": "docpad deploy-ghpages --env static",
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
