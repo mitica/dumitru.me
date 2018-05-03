@@ -6,6 +6,7 @@ tags:
   - SRL
   - Afaceri
 cid: p-16-1
+date: 2016-01-03T10:13:00
 ---
 
 După ce am trecut prin experianța lichidării unui SRL, am hotărât să împart din experiența mea cu alții.

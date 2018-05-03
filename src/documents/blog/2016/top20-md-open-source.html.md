@@ -6,6 +6,7 @@ tags:
   - Top20
   - Open Source
 cid: p-16-2
+date: 2016-01-06T10:13:00
 ---
 
 Caut o modalitate prin care proiectul [Top20.md](http://www.top20.md/) ar putea să aibă viață și sens în continuare.

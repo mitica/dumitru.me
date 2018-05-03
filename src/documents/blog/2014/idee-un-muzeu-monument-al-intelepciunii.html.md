@@ -4,6 +4,7 @@ layout: "post"
 tags: ["Idei"]
 isPost: true
 cid: 'p-14-3'
+date: 2014-09-03T10:13:00
 ---
 
 Azi mi-a venit în minte o idee interesantă. Vreau să o împart cu alții și să vedem cât e de bună.

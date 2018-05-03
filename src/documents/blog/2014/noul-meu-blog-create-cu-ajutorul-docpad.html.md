@@ -4,6 +4,7 @@ layout: "post"
 tags: ["DocPad","Blog"]
 isPost: true
 cid: 'p-14-1'
+date: 2014-04-22T10:13:00
 ---
 
 De ceva timp căutam o platformă de blogging care să satisfacă cerințele/mofturile mele (ale unui dezvoltator web).

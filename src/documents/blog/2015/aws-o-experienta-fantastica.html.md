@@ -4,6 +4,7 @@ layout: "post"
 tags: ["AWS", "Cloud"]
 isPost: true
 cid: 'p-15-1'
+date: 2015-05-18T10:13:00
 ---
 
 Recunosc că am fost un programator .NET convins. Mă simțeam foarte confortabil în lumea Windows: server, C#, etc.
