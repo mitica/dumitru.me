@@ -1,0 +1,44 @@
+---
+title: Entitizer - un serviciu simplu Named-Entity recognition
+layout: post
+isPost: true
+tags:
+  - Entitizer
+  - NER
+  - Open Source
+cid: p-18-1
+date: 2018-05-04T12:00:00
+---
+
+În ultimele săptămâni lucrez din greu la proiectul [Entitizer](http://entitizer.com) - 
+un serviciu de recunoaștere a entitităților populare în text.
+
+Proiectul nu are pretențiile unui serviciu Named-Entity recognition (NER) veritabil.
+Însă, dacă ai nevoie să extragi entitițile(persoane, localități, organizații, etc.)
+dintr-o știre, de exemplu, atunci poate fi o alegere foarte bună.
+
+Plusurile proiectului:
+
+- Recunoaște bine variațiile unui nume: Ana Carp, Anei Carp, etc.
+- Este foarte rapid: ~100 ms
+- Folosește puține resurse
+- va funcționa în limbi mai puțin populare: română, bulgară, cehă, poloneză, etc.
+
+
+<%- @partial("post-image", false, {src:"/img/blog/entitizer-demo-screen.jpg", alt:"demo entitizer.com", title:"Demo Entitizer.com", caption:"Demo Entitizer", align: "center", size:"big"}) %>
+
+În prezent, Entitizer este la etapa de învățare: zilnic învață noi entități din știrile
+din R. Moldova și de pe Wikipedia.
+
+#### Cum funcționează
+
+Entitizer face următorii pași:
+
+1. Învață entități:
+  - Colectează entități din știri/texte;
+  - Identifică entitățile cu ajutorul wikidata/wikipedia;
+  - Salvează entititățile învățate;
+
+2. Identitifică entitățile învățate în text
+
+Codul este pe Github la [Textactor](https://github.com/textactor) și [Entitizer](https://github.com/entitizer).
