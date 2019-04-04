@@ -15,7 +15,7 @@ docpadConfig = {
 			title: "dumitru.me"
 			version: '0.2.0'
 			host: 'dumitru.me'
-			motto: 'Coding din plăcere'
+			motto: 'IT Engineer'
 			url: 'http://dumitru.me'
 			feed: 'http://feeds.feedburner.com/dumitru'
 
