@@ -8,7 +8,7 @@ projName: 'Ournet'
 projIsAlive: true
 projReleaseDate: '2010-04-25'
 projVersion: '2.7'
-projLinks: ["http://www.click.md","http://www.ournet.ro","http://www.zborg.ru","http://www.ournet.in","http://www.ournet.bg","http://www.ournet.hu","http://www.ournet.cz","http://www.diez.pl"]
+projLinks: ["http://www.click.md","http://www.ournet.ro","http://www.zborg.ru","http://www.ournet.in","http://www.ournet.bg","http://www.ournet.hu","http://www.ournet.cz","http://www.diez.pl","https://www.moti2.al","https://www.thoi.vn"]
 cid: 'proj-ournet'
 ---
 
