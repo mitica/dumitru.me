@@ -24,7 +24,8 @@
   "scripts": {
     "start": "docpad-server",
     "deploy": "docpad deploy-ghpages --env static",
-    "test": "exit 0"
+    "test": "exit 0",
+    "docpad": "./node_modules/.bin/docpad"
   },
   "repository": {
     "type": "git",
