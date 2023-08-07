@@ -3,7 +3,7 @@
 
 moment = require 'moment'
 
-moment.lang('ro');
+moment.locale('ro');
 
 # Define the DocPad Configuration
 docpadConfig = {
