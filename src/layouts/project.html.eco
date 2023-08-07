@@ -27,7 +27,7 @@ layout: "default"
       <dt>Linkuri:</dt>
       <dd>
         <% for link in @document.projLinks: %>
-        <p>&bull; <a href="<%= link %>"><%= link.replace('http://','') %></a></p>
+        <p>&bull; <a href="<%= link %>"><%= link.replace(/^https?\:\/\//,'') %></a></p>
         <% end %>
       </dd>
     </dl>
