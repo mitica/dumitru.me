@@ -17,7 +17,7 @@
     "docpad-plugin-rss": "~2.3.1",
     "docpad-plugin-sunny": "~2.1.0",
     "docpad-plugin-tags": "~2.0.7",
-    "moment": "~2.24.0",
+    "moment": "~2.29.4",
     "underscore": "~1.6.0"
   },
   "main": "docpad-server",
