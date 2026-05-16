@@ -1,0 +1,37 @@
+1:"$Sreact.fragment"
+3:I[8500,["500","static/chunks/500-c99b8dfd3de17c86.js","953","static/chunks/app/blog/%5Bslug%5D/page-5d011eba6668cace.js"],""]
+6:I[484,[],"OutletBoundary"]
+7:"$Sreact.suspense"
+2:T94e,<p>Recunosc că am fost un programator .NET convins. Mă simțeam foarte confortabil în lumea Windows: server, C#, etc.</p>
+<p>De fapt, după absolvirea universității, practic, am programat doar în C# (...). Între timp, a crescut numărul serverelor pe care țineam proiectele mele: Top20.md(vechi), Place.md(mort), Ournet(<a href="http://meteo.ournet.ro">ournet.ro</a>, click.md, <a href="http://pogoda.zborg.ru">zborg.ru</a>, etc. - vii), și alte zeci de încercări.</p>
+<h2>Amazon Web Services</h2>
+<p>AWS este superb! Cine nu știe ce și cum - nu voi lămuri - e prea târziu; celora care nu se pot hotărî să folosească <em>la greu</em> serviciile Amazon, le sugerez să lase orice îndoială și să caute soluții anume în Cloud.</p>
+<h2>Node.js</h2>
+<p>Ca limbaj de programare server side am ales Nodejs. Despre acesta pot spune doar cuvinde bune: simplu, modular, clar, opensource.</p>
+<p>Acum când revin la proiectele scrise în C#, de multe ori, mă îngrozesc la câtă complexitate fără de sens găsesc.</p>
+<h2>Exemplu</h2>
+<p>De mai mult timp foloseam, ocazional, serviciile AWS, în special S3. Relativ recent, am hotărât să transfer toate proiectele pe AWS.</p>
+<p>Am început cu proiectul Meteo de pe Ournet - mi s-a părut mie mai ușor de rescris și transportat.</p>
+<p>Proiectul are ~ <strong>80 mii afișări de pagini pe zi</strong>. Bază de date cu câteva sute de mii de localități și informația despre starea vremii pentru localitățile căutate.</p>
+<p>Proiectul folosește pe AWS următoarele resurse:</p>
+<ul>
+<li>1 server cu 1CPU și 1GB RAM, Linux;</li>
+<li>DynamoDB;<ul>
+<li>un tabel cu localități;</li>
+<li>alt table cu starea vremii;</li>
+</ul>
+</li>
+<li>CloudFront</li>
+</ul>
+<p>Deci, un proiect cu 80.000 afișări de pagini per zi funcționează excelent pe o instanță de 1CPU și 1GB RAM.</p>
+<p>După părerea mea - este foarte bine.</p>
+<h4>Costuri</h4>
+<p>Costul pentru toate resursele folosite pe AWS este sub <strong>$40</strong> per lună.</p>
+<h2>Concluzii</h2>
+<p>Trecând peste toate avantajele unui Cloud, cel mai fine mi s-a părut faptul că la fiecare linie de cod ții cont de resursele pe care le folosești.</p>
+<p>În lunele următoare voi transfera și celelalte proiecte în Cloud-ul Amazon.</p>
+<p>Acum cred că dacă un proiect nu se poate auto-întreține pe AWS, atunci nu merită creat.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","header",null,{"className":"border-b border-stone-300/70 pb-6","children":[["$","p",null,{"className":"eyebrow","children":"Articol"}],["$","h1",null,{"className":"title-display mt-2 text-4xl font-semibold text-stone-950 md:text-5xl","children":"AWS - o experiență fantastică"}],["$","p",null,{"className":"mt-3 text-sm text-stone-500","children":"luni, 18 mai 2015"}]]}],["$","div",null,{"className":"markdown mt-7","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","footer",null,{"className":"mt-8 border-t border-stone-300/70 pt-6","children":[["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","aws-o-experienta-fantastica-AWS",{"href":"/tags/aws","className":"chip","children":"AWS"}],["$","$L3","aws-o-experienta-fantastica-Cloud",{"href":"/tags/cloud","className":"chip","children":"Cloud"}]]}],["$","div",null,{"className":"mt-6 grid gap-2 text-sm sm:grid-cols-2","children":[["$","div",null,{"children":["$","$L3",null,{"href":"/blog/procedura-de-lichidare-srl-moldova","className":"text-stone-600 hover:text-stone-950","children":["← ","Procedura de lichidare a unei întreprinderii în Moldova"]}]}],["$","div",null,{"className":"text-left sm:text-right","children":"$L4"}]]}]]}]]}],null,"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"h9W43bJzOBs4brtLOY1cX"}
+4:["$","$L3",null,{"href":"/blog/idee-un-muzeu-monument-al-intelepciunii","className":"text-stone-600 hover:text-stone-950","children":["Idee: Un muzeu/monument al înțelepciunii"," →"]}]
+5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null

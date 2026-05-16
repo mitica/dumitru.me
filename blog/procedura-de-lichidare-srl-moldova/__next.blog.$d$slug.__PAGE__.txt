@@ -1,0 +1,23 @@
+1:"$Sreact.fragment"
+3:I[8500,["500","static/chunks/500-c99b8dfd3de17c86.js","953","static/chunks/app/blog/%5Bslug%5D/page-5d011eba6668cace.js"],""]
+4:I[484,[],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T5a2,<p>După ce am trecut prin experianța lichidării unui SRL, am hotărât să împart din experiența mea cu alții.</p>
+<p>Vă spun de la început: nu e greu, complicat sau scump. Se cere doar puțină răbdare și informare. Cu informarea la mine a fost o problemă - nu prea am găsit info. Pentru voi se pare că va fi mai simplu.</p>
+<p>În linii mari sunt doar câțiva pași:</p>
+<ol>
+<li><strong>Anunțarea procedurii de lichidare</strong> - la Camera Înregistrării de Stat și Monitorul Oficial;</li>
+<li><strong>Lucru la contabilitate</strong> - Raport financiar, închidere conturi bancare;</li>
+<li><strong>Colecatre certificate</strong> - de la câteva întreprinderi de stat: Vamă, CNAS, Statistică, etc.</li>
+<li><strong>Actul de control</strong> - de la FISC, sediul central;</li>
+<li><strong>Certificat ce confirmă lipsa datoriilor la bugetul de stat</strong> - FISC din sectorul unde se află firma;</li>
+<li><strong>Încheierea procedurei de lichidare</strong> - la CÎS.</li>
+</ol>
+<p>Un document detaliat:</p>
+<iframe src="https://docs.google.com/document/d/19XMJYBEGGg4-scA3ZJA7A2B-ATD1GFZBpLqeV7cfUiE/pub?embedded=true" style="width: 100%; height: 400px" frameborder="none"></iframe>
+
+<p>Vă invit să sugerați modificări în <a href="https://docs.google.com/document/d/19XMJYBEGGg4-scA3ZJA7A2B-ATD1GFZBpLqeV7cfUiE/edit?usp=sharing">acest document</a>.</p>
+<p>Procedura durează minim 3 luni.</p>
+<p>Succes.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","header",null,{"className":"border-b border-stone-300/70 pb-6","children":[["$","p",null,{"className":"eyebrow","children":"Articol"}],["$","h1",null,{"className":"title-display mt-2 text-4xl font-semibold text-stone-950 md:text-5xl","children":"Procedura de lichidare a unei întreprinderii în Moldova"}],["$","p",null,{"className":"mt-3 text-sm text-stone-500","children":"duminică, 3 ian. 2016"}]]}],["$","div",null,{"className":"markdown mt-7","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","footer",null,{"className":"mt-8 border-t border-stone-300/70 pt-6","children":[["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","procedura-de-lichidare-srl-moldova-SRL",{"href":"/tags/srl","className":"chip","children":"SRL"}],["$","$L3","procedura-de-lichidare-srl-moldova-Afaceri",{"href":"/tags/afaceri","className":"chip","children":"Afaceri"}]]}],["$","div",null,{"className":"mt-6 grid gap-2 text-sm sm:grid-cols-2","children":[["$","div",null,{"children":["$","$L3",null,{"href":"/blog/top20-md-open-source","className":"text-stone-600 hover:text-stone-950","children":["← ","Top20.md este acum Open Source"]}]}],["$","div",null,{"className":"text-left sm:text-right","children":["$","$L3",null,{"href":"/blog/aws-o-experienta-fantastica","className":"text-stone-600 hover:text-stone-950","children":["AWS - o experiență fantastică"," →"]}]}]]}]]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"h9W43bJzOBs4brtLOY1cX"}
+6:null

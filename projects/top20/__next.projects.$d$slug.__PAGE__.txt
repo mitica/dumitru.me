@@ -1,0 +1,23 @@
+1:"$Sreact.fragment"
+2:I[8500,["500","static/chunks/500-c99b8dfd3de17c86.js","419","static/chunks/app/projects/%5Bslug%5D/page-5d011eba6668cace.js"],""]
+4:I[484,[],"OutletBoundary"]
+5:"$Sreact.suspense"
+3:T531,<p>Top20.md este un site care oferă clasament și statictici web pentru site-urile din R. Moldova.</p>
+<p>Acest este primul meu proiect - l-am lansat în ultimul an de facultate.</p>
+<p>Atunci au existat 2 factori mari care m-am înpins la această idee:</p>
+<ol>
+<li>Complexitatea backend-ului (SGBD, performanță, etc.);</li>
+<li>Faptul că la noi în R. Moldova nu exista nici un proiect de acest gen care să fie macar tradus în limba română.</li>
+</ol>
+<p>La acel moment exista proiectul super.md (doar în rusă), care a dispărut.</p>
+<h3>Rezultate</h3>
+<p>Proiectul a prins de la început: a fost folosit și este folosit în continuare de multe site-uri de la noi.</p>
+<p>Din punct de vedere financiar, acest proiect rămâne, până când, cel mai de succes.</p>
+<h2>Probleme</h2>
+<p>De la lansarea proiectului în versiunea 1 și până azi (versiunea 3), proiectul mai are probleme minore de performanțe.</p>
+<p>Aș dori să fie folosit de mai multe site-uri mari de la noi.</p>
+<h2>Starea actuală</h2>
+<p>La etapa actuală proiectul este funcțional, dar este într-o &#39;criză existențială&#39; acută, și asta datorită Google Analytics. S-ar putea spune că proiectul a îmbătrânit.</p>
+<p>De ceva timp caut o nouă formă pentru acest proiect, una mai acceptabilă pentru clienții Top20.md...</p>
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","header",null,{"className":"border-b border-stone-300/70 pb-6","children":[["$","p",null,{"className":"eyebrow","children":"Proiect"}],["$","h1",null,{"className":"title-display mt-2 text-4xl font-semibold text-stone-950 md:text-5xl","children":["Top20.md",["$","sup",null,{"className":"ml-2 text-xl text-stone-400","children":["(",2007,")"]}]]}],["$","p",null,{"className":"section-copy mt-3","children":"Clasament și statistici web"}]]}],["$","div",null,{"className":"mt-7 grid gap-6 lg:grid-cols-[230px_minmax(0,1fr)]","children":[["$","aside",null,{"className":"h-fit border-t border-stone-300/70 pt-4 lg:sticky lg:top-6","children":[["$","p",null,{"className":"text-sm text-stone-700","children":[["$","strong",null,{"className":"text-stone-950","children":"Stare:"}]," ","Activ"]}],["$","div",null,{"className":"mt-4","children":[["$","h2",null,{"className":"text-sm font-semibold uppercase tracking-[0.08em] text-stone-500","children":"Linkuri"}],["$","ul",null,{"className":"mt-2 space-y-2 text-sm","children":[["$","li","http://www.top20.md",{"children":["$","a",null,{"href":"http://www.top20.md","target":"_blank","rel":"noreferrer","className":"text-cyan-800 underline decoration-cyan-300 underline-offset-3 hover:text-cyan-950","children":"www.top20.md"}]}]]}]]}],["$","p",null,{"className":"mt-5","children":["$","$L2",null,{"href":"/projects","className":"text-sm text-stone-600 hover:text-stone-950","children":"← Înapoi la proiecte"}]}]]}],["$","div",null,{"className":"markdown","dangerouslySetInnerHTML":{"__html":"$3"}}]]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"h9W43bJzOBs4brtLOY1cX"}
+6:null

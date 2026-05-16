@@ -1,0 +1,16 @@
+1:"$Sreact.fragment"
+3:I[8500,["500","static/chunks/500-c99b8dfd3de17c86.js","953","static/chunks/app/blog/%5Bslug%5D/page-5d011eba6668cace.js"],""]
+4:I[484,[],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T574,<p>Azi mi-a venit în minte o idee interesantă. Vreau să o împart cu alții și să vedem cât e de bună.</p>
+<p>Mă gândeam la un <strong>muzeu/monument al înțelepciunii</strong> - așa am formulat ideea.</p>
+<p>De fapt, ideea constă în următoarele: crearea unui <em>loc</em> unde sunt cumva prezentate cele mai bune proverbe/citate ale fiecărui popor.</p>
+<p>Cu siguranță sunt multe cărți cu proverbe, citate din diferite culturi și domenii, dar <strong>nu știu dacă există</strong> un loc unde ai putea să te duci și să <em>te inspiri</em> din înțelepciunea omenirii(mă refer la proverbe și citate).</p>
+<p>Insist pe ideea unui <em>loc</em> fiindcă cred că un loc ar aduna într-o altă formă oamenii, decât o carte.</p>
+<p>Cum ar fi bine de implementat ideea nu prea știu. Eu m-am gândit doar la o variantă.</p>
+<h3>Implementare. Varianta 1</h3>
+<p>Mă gândesc la un monument format din câte o <em>statuie/coloană</em> pentru fiecare cultură, pe care să fie sculptate cele mai importante(din cultura respectivă) proverbe/citate și în dreptul proverbului să fie și o reprezentare grafică a acestuia.<br>Inscripțiile ar putea fi traduse în mai multe limbi(cumva arhitectoral/design interesant).</p>
+<p>S-ar putea de amplasat afară, sub cerul liber - ar fi un loc destul de mare și plin de înțelepciune! :)</p>
+<p>Eu aș vizita un așa loc.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","header",null,{"className":"border-b border-stone-300/70 pb-6","children":[["$","p",null,{"className":"eyebrow","children":"Articol"}],["$","h1",null,{"className":"title-display mt-2 text-4xl font-semibold text-stone-950 md:text-5xl","children":"Idee: Un muzeu/monument al înțelepciunii"}],["$","p",null,{"className":"mt-3 text-sm text-stone-500","children":"miercuri, 3 sept. 2014"}]]}],["$","div",null,{"className":"markdown mt-7","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","footer",null,{"className":"mt-8 border-t border-stone-300/70 pt-6","children":[["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","idee-un-muzeu-monument-al-intelepciunii-Idei",{"href":"/tags/idei","className":"chip","children":"Idei"}]]}],["$","div",null,{"className":"mt-6 grid gap-2 text-sm sm:grid-cols-2","children":[["$","div",null,{"children":["$","$L3",null,{"href":"/blog/aws-o-experienta-fantastica","className":"text-stone-600 hover:text-stone-950","children":["← ","AWS - o experiență fantastică"]}]}],["$","div",null,{"className":"text-left sm:text-right","children":["$","$L3",null,{"href":"/blog/entipic-o-imagine-pentru-fiecare-subiect","className":"text-stone-600 hover:text-stone-950","children":["Entipic - o imagine pentru fiecare subiect"," →"]}]}]]}]]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"h9W43bJzOBs4brtLOY1cX"}
+6:null
