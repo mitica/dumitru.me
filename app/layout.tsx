@@ -19,24 +19,20 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
   return (
     <html lang="ro">
-      <body className="site-bg min-h-screen antialiased selection:bg-emerald-200/70 selection:text-emerald-950">
-        <div className="mx-auto max-w-6xl px-4 py-7 md:px-6 md:py-9 lg:py-10">
-          <header className="surface relative overflow-hidden rounded-[2rem] p-5 backdrop-blur md:p-7">
-            <div className="pointer-events-none absolute -right-16 -top-20 h-44 w-44 rounded-full bg-gradient-to-br from-emerald-300/30 via-orange-200/20 to-transparent blur-3xl" />
-            <div className="pointer-events-none absolute -left-16 -bottom-20 h-40 w-40 rounded-full bg-gradient-to-br from-teal-200/35 to-transparent blur-2xl" />
-
-            <div className="relative flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+      <body className="site-bg min-h-screen antialiased selection:bg-cyan-200/70 selection:text-stone-950">
+        <div className="mx-auto max-w-6xl px-4 py-5 md:px-6 md:py-7">
+          <header className="border-b border-stone-300/70 pb-5">
+            <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
               <div className="flex items-center gap-4">
-                <Link href="/" aria-label="dumitru.me - homepage" className="avatar-ring block overflow-hidden rounded-2xl">
-                  <Image src="/img/face.jpg" alt="Dumitru Cantea" width={78} height={78} className="h-[78px] w-[78px] object-cover" priority />
+                <Link href="/" aria-label="dumitru.me - homepage" className="avatar-ring block overflow-hidden rounded-full">
+                  <Image src="/img/face.jpg" alt="Dumitru Cantea" width={58} height={58} className="h-[58px] w-[58px] object-cover" priority />
                 </Link>
 
                 <div>
-                  <p className="eyebrow">Personal Website</p>
-                  <Link href="/" className="title-display mt-1 block text-3xl font-semibold text-emerald-950 md:text-4xl">
+                  <Link href="/" className="title-display block text-2xl font-semibold text-stone-950 md:text-3xl">
                     dumitru.me
                   </Link>
-                  <p className="mt-1 text-sm text-emerald-900/70">IT Engineer</p>
+                  <p className="mt-1 text-sm text-stone-600">IT Engineer</p>
                 </div>
               </div>
 
@@ -44,21 +40,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             </div>
           </header>
 
-          <div className="mt-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_260px]">
+          <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_240px]">
             <main className="min-w-0">{children}</main>
 
-            <aside className="surface h-fit rounded-2xl p-5 lg:sticky lg:top-6">
-              <h2 className="text-base font-semibold text-emerald-950">Tags</h2>
-              <p className="mt-1 text-sm text-emerald-900/65">Explorează postările după subiect.</p>
+            <aside className="h-fit border-t border-stone-300/70 pt-5 lg:sticky lg:top-6">
+              <h2 className="text-base font-semibold text-stone-950">Tags</h2>
+              <p className="mt-1 text-sm text-stone-600">Explorează postările după subiect.</p>
               <div className="mt-4">
                 <TagCloud tags={tags} />
               </div>
             </aside>
           </div>
 
-          <footer className="divider mt-10 border-t pt-6 text-sm text-emerald-900/68">
+          <footer className="mt-12 border-t border-stone-300/70 pt-6 text-sm text-stone-600">
             <p>
-              <strong className="text-emerald-950">dumitru.me</strong> rebuilt with Next.js and exported as static pages.
+              <strong className="text-stone-950">dumitru.me</strong> - Dumitru Cantea.
             </p>
           </footer>
         </div>

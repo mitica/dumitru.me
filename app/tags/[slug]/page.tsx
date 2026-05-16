@@ -36,7 +36,7 @@ export default async function TagPage({ params }: TagPageProps) {
     <section className="space-y-5">
       <div>
         <p className="eyebrow">Tag</p>
-        <h1 className="title-display mt-2 text-4xl font-semibold text-emerald-950">{tag.name}</h1>
+        <h1 className="title-display mt-2 text-4xl font-semibold text-stone-950">{tag.name}</h1>
         <p className="section-copy mt-2">{tag.count} articole cu acest tag.</p>
       </div>
 

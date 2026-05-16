@@ -12,7 +12,7 @@ export function MainNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex flex-wrap items-center gap-2" aria-label="Main">
+    <nav className="flex flex-wrap items-center gap-5" aria-label="Main">
       {items.map((item) => {
         const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
 
@@ -21,10 +21,10 @@ export function MainNav() {
             key={item.href}
             href={item.href}
             className={[
-              "rounded-full border px-4 py-2 text-sm font-medium transition",
+              "border-b py-1 text-sm font-medium transition",
               isActive
-                ? "border-emerald-300 bg-emerald-100/70 text-emerald-900"
-                : "border-emerald-900/20 bg-white/80 text-emerald-900/72 hover:border-emerald-900/30 hover:bg-white hover:text-emerald-950"
+                ? "border-cyan-700 text-stone-950"
+                : "border-transparent text-stone-600 hover:border-stone-400 hover:text-stone-950"
             ].join(" ")}
           >
             {item.label}

@@ -13,7 +13,7 @@ export default function BlogPage() {
     <section className="space-y-5">
       <div>
         <p className="eyebrow">Jurnal tehnic</p>
-        <h1 className="title-display mt-2 text-4xl font-semibold text-emerald-950">Blog</h1>
+        <h1 className="title-display mt-2 text-4xl font-semibold text-stone-950">Blog</h1>
         <p className="section-copy mt-2">Toate articolele, ordonate de la cel mai nou la cel mai vechi.</p>
       </div>
 
