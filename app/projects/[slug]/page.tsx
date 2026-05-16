@@ -31,33 +31,29 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <article className="rounded-3xl border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+    <article className="surface-strong rounded-3xl p-6 md:p-8">
       <header>
-        <h1 className="text-4xl font-semibold leading-tight tracking-tight text-stone-900 md:text-5xl">
+        <p className="eyebrow">Proiect</p>
+        <h1 className="title-display mt-2 text-4xl font-semibold text-emerald-950 md:text-5xl">
           {project.title}
-          {project.releaseYear ? <sup className="ml-2 text-xl text-stone-400">({project.releaseYear})</sup> : null}
+          {project.releaseYear ? <sup className="ml-2 text-xl text-emerald-900/45">({project.releaseYear})</sup> : null}
         </h1>
-        {project.summary ? <p className="mt-3 text-stone-500">{project.summary}</p> : null}
+        {project.summary ? <p className="section-copy mt-3">{project.summary}</p> : null}
       </header>
 
       <div className="mt-7 grid gap-6 lg:grid-cols-[230px_minmax(0,1fr)]">
-        <aside className="h-fit rounded-2xl border border-stone-200 bg-stone-50 p-4 lg:sticky lg:top-6">
-          <p className="text-sm text-stone-600">
-            <strong className="text-stone-800">Stare:</strong> {project.isAlive ? "Activ" : "Inactiv"}
+        <aside className="surface h-fit rounded-2xl p-4 lg:sticky lg:top-6">
+          <p className="text-sm text-emerald-900/78">
+            <strong className="text-emerald-950">Stare:</strong> {project.isAlive ? "Activ" : "Inactiv"}
           </p>
 
           {project.links.length > 0 ? (
             <div className="mt-4">
-              <h2 className="text-sm font-semibold uppercase tracking-[0.08em] text-stone-500">Linkuri</h2>
+              <h2 className="text-sm font-semibold uppercase tracking-[0.08em] text-emerald-900/58">Linkuri</h2>
               <ul className="mt-2 space-y-2 text-sm">
                 {project.links.map((link) => (
                   <li key={link}>
-                    <a
-                      href={link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-amber-700 underline decoration-amber-300 underline-offset-3 hover:text-amber-800"
-                    >
+                    <a href={link} target="_blank" rel="noreferrer" className="text-emerald-800 underline decoration-emerald-300 underline-offset-3 hover:text-emerald-900">
                       {link.replace(/^https?:\/\//, "")}
                     </a>
                   </li>
@@ -67,7 +63,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           ) : null}
 
           <p className="mt-5">
-            <Link href="/projects" className="text-sm text-stone-600 hover:text-stone-900">
+            <Link href="/projects" className="text-sm text-emerald-900/72 hover:text-emerald-950">
               ← Înapoi la proiecte
             </Link>
           </p>

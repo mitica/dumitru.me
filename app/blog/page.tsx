@@ -12,8 +12,9 @@ export default function BlogPage() {
   return (
     <section className="space-y-5">
       <div>
-        <h1 className="text-4xl font-semibold tracking-tight text-stone-900">Blog</h1>
-        <p className="mt-2 text-stone-500">Toate articolele, ordonate de la cel mai nou la cel mai vechi.</p>
+        <p className="eyebrow">Jurnal tehnic</p>
+        <h1 className="title-display mt-2 text-4xl font-semibold text-emerald-950">Blog</h1>
+        <p className="section-copy mt-2">Toate articolele, ordonate de la cel mai nou la cel mai vechi.</p>
       </div>
 
       <PostsList posts={posts} />

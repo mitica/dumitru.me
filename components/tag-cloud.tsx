@@ -18,18 +18,9 @@ export function TagCloud({ tags }: TagCloudProps) {
         const isActive = pathname === href || pathname.startsWith(`${href}/`);
 
         return (
-          <Link
-            key={tag.slug}
-            href={href}
-            className={[
-              "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs transition",
-              isActive
-                ? "border-amber-300 bg-amber-50 text-amber-700"
-                : "border-stone-200 bg-stone-50 text-stone-600 hover:border-stone-300 hover:bg-white hover:text-stone-900"
-            ].join(" ")}
-          >
+          <Link key={tag.slug} href={href} className={["chip inline-flex items-center gap-1.5", isActive ? "chip-active" : ""].join(" ")}>
             <span>{tag.name}</span>
-            <small className="text-[11px] text-stone-500">{tag.count}</small>
+            <small className="text-[11px] opacity-70">{tag.count}</small>
           </Link>
         );
       })}

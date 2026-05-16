@@ -30,13 +30,96 @@ body {
 }
 
 body {
-  font-family: "FFTisa", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-family: "FFTisa", "Avenir Next", "Palatino Linotype", Georgia, serif;
+}
+
+:root {
+  --bg: #f4f6f5;
+  --bg-alt: #e8eeec;
+  --surface: rgb(255 255 255 / 0.92);
+  --surface-strong: #ffffff;
+  --line: #d7ddda;
+  --line-strong: #c4cdc8;
+  --text: #1b3029;
+  --text-muted: #5d7068;
+  --accent: #1f7a66;
+  --accent-soft: #dcf0ea;
+}
+
+.site-bg {
+  background:
+    radial-gradient(1000px 500px at 8% -5%, rgb(204 232 224 / 0.7), transparent 60%),
+    radial-gradient(700px 380px at 90% 0%, rgb(255 232 208 / 0.7), transparent 58%),
+    linear-gradient(180deg, var(--bg), var(--bg-alt));
+  color: var(--text);
+}
+
+.surface {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  box-shadow: 0 16px 36px -30px rgb(22 34 30 / 0.6);
+}
+
+.surface-strong {
+  border: 1px solid var(--line);
+  background: var(--surface-strong);
+  box-shadow: 0 18px 34px -28px rgb(22 34 30 / 0.55);
+}
+
+.title-display {
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.eyebrow {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-copy {
+  color: var(--text-muted);
+  font-size: 1.02rem;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  background: rgb(255 255 255 / 0.86);
+  color: var(--text-muted);
+  border-radius: 999px;
+  font-size: 0.79rem;
+  padding: 0.27rem 0.65rem;
+  transition: all 150ms ease;
+}
+
+.chip:hover {
+  border-color: var(--line-strong);
+  color: var(--text);
+}
+
+.chip-active {
+  border-color: #8cc8b9;
+  background: var(--accent-soft);
+  color: #0f4e40;
+}
+
+.divider {
+  border-color: var(--line);
+}
+
+.avatar-ring {
+  background:
+    linear-gradient(140deg, #fff, #f3faf7) padding-box,
+    linear-gradient(140deg, #7ab9a8, #ffe4c8) border-box;
+  border: 2px solid transparent;
 }
 
 .markdown {
-  color: rgb(68 64 60);
+  color: #304740;
   font-size: 1.04rem;
-  line-height: 1.9;
+  line-height: 1.86;
 }
 
 .markdown > :first-child {
@@ -46,7 +129,7 @@ body {
 .markdown h2,
 .markdown h3,
 .markdown h4 {
-  color: rgb(28 25 23);
+  color: #112821;
   line-height: 1.25;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
@@ -82,35 +165,35 @@ body {
 }
 
 .markdown a {
-  color: rgb(180 83 9);
+  color: #166553;
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-decoration-color: rgb(253 186 116);
+  text-decoration-color: #b7ddd2;
 }
 
 .markdown a:hover {
-  color: rgb(154 52 18);
+  color: #0f4e40;
 }
 
 .markdown blockquote {
-  border-left: 3px solid rgb(253 186 116);
+  border-left: 3px solid #9dd3c4;
   padding-left: 1rem;
-  color: rgb(87 83 78);
+  color: #4d665f;
 }
 
 .markdown code {
-  background: rgb(255 247 237);
-  border: 1px solid rgb(254 215 170);
+  background: #f1f7f4;
+  border: 1px solid #cfe2db;
   border-radius: 0.45rem;
   padding: 0.1rem 0.35rem;
   font-size: 0.94em;
 }
 
 .markdown pre {
-  background: rgb(28 25 23);
-  color: rgb(254 243 199);
+  background: #152924;
+  color: #e6f8f1;
   border-radius: 0.8rem;
-  border: 1px solid rgb(68 64 60);
+  border: 1px solid #314740;
   padding: 1rem;
   overflow-x: auto;
 }
@@ -126,12 +209,12 @@ body {
   width: 100%;
   height: auto;
   border-radius: 0.8rem;
-  border: 1px solid rgb(231 229 228);
+  border: 1px solid #dde5e1;
 }
 
 .markdown iframe {
   width: 100%;
-  border: 1px solid rgb(231 229 228);
+  border: 1px solid #dde5e1;
   border-radius: 0.8rem;
 }
 
@@ -146,7 +229,7 @@ body {
 
 .post-image figcaption {
   margin-top: 0.45rem;
-  color: rgb(120 113 108);
+  color: #647772;
   font-size: 0.88rem;
 }
 

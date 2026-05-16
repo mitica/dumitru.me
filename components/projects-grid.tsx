@@ -12,18 +12,18 @@ export function ProjectsGrid({ projects }: ProjectsGridProps) {
         <article
           key={project.slug}
           className={[
-            "rounded-2xl border bg-white p-5 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-md",
-            project.isAlive ? "border-emerald-200/80" : "border-stone-200"
+            "surface-strong rounded-2xl p-5 transition duration-200 hover:-translate-y-0.5 hover:shadow-xl",
+            project.isAlive ? "border-emerald-300/80" : "border-slate-300/70"
           ].join(" ")}
         >
-          <h3 className="text-xl font-semibold leading-tight text-stone-900">
-            <Link href={`/projects/${project.slug}`} className="hover:text-stone-700">
+          <h3 className="title-display text-xl font-semibold text-emerald-950">
+            <Link href={`/projects/${project.slug}`} className="hover:text-emerald-800">
               {project.title}
             </Link>
-            {project.releaseYear ? <sup className="ml-1 text-sm text-stone-400">{project.releaseYear}</sup> : null}
+            {project.releaseYear ? <sup className="ml-1 text-sm text-emerald-900/45">{project.releaseYear}</sup> : null}
           </h3>
 
-          <p className="mt-3 text-sm text-stone-600">{project.summary || "Fără descriere scurtă."}</p>
+          <p className="mt-3 text-sm text-emerald-950/72">{project.summary || "Fără descriere scurtă."}</p>
         </article>
       ))}
     </div>

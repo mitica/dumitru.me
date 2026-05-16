@@ -23,8 +23,8 @@ export function MainNav() {
             className={[
               "rounded-full border px-4 py-2 text-sm font-medium transition",
               isActive
-                ? "border-amber-300 bg-amber-50 text-amber-700"
-                : "border-stone-200 text-stone-600 hover:border-stone-300 hover:bg-stone-50 hover:text-stone-900"
+                ? "border-emerald-300 bg-emerald-100/70 text-emerald-900"
+                : "border-emerald-900/20 bg-white/80 text-emerald-900/72 hover:border-emerald-900/30 hover:bg-white hover:text-emerald-950"
             ].join(" ")}
           >
             {item.label}

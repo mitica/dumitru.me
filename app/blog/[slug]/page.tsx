@@ -34,22 +34,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const adjacent = getAdjacentPosts(post.slug);
 
   return (
-    <article className="rounded-3xl border border-stone-200 bg-white p-6 shadow-sm md:p-8">
+    <article className="surface-strong rounded-3xl p-6 md:p-8">
       <header>
-        <h1 className="text-4xl font-semibold leading-tight tracking-tight text-stone-900 md:text-5xl">{post.title}</h1>
-        <p className="mt-3 text-sm text-stone-500">{formatDateRo(post.dateValue)}</p>
+        <p className="eyebrow">Articol</p>
+        <h1 className="title-display mt-2 text-4xl font-semibold text-emerald-950 md:text-5xl">{post.title}</h1>
+        <p className="mt-3 text-sm text-emerald-900/55">{formatDateRo(post.dateValue)}</p>
       </header>
 
       <div className="markdown mt-7" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
 
-      <footer className="mt-8 border-t border-stone-200 pt-6">
+      <footer className="divider mt-8 border-t pt-6">
         <div className="flex flex-wrap gap-2">
           {post.tags.map((tag) => (
-            <Link
-              key={`${post.slug}-${tag}`}
-              href={`/tags/${normalizeTagSlug(tag)}`}
-              className="inline-flex rounded-full border border-amber-200/80 bg-amber-50/60 px-2.5 py-1 text-xs text-amber-700 transition hover:border-amber-300 hover:bg-amber-100/80"
-            >
+            <Link key={`${post.slug}-${tag}`} href={`/tags/${normalizeTagSlug(tag)}`} className="chip">
               {tag}
             </Link>
           ))}
@@ -58,7 +55,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="mt-6 grid gap-2 text-sm sm:grid-cols-2">
           <div>
             {adjacent.next ? (
-              <Link href={`/blog/${adjacent.next.slug}`} className="text-stone-600 hover:text-stone-900">
+              <Link href={`/blog/${adjacent.next.slug}`} className="text-emerald-900/72 hover:text-emerald-950">
                 ← {adjacent.next.title}
               </Link>
             ) : null}
@@ -66,7 +63,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
           <div className="text-left sm:text-right">
             {adjacent.prev ? (
-              <Link href={`/blog/${adjacent.prev.slug}`} className="text-stone-600 hover:text-stone-900">
+              <Link href={`/blog/${adjacent.prev.slug}`} className="text-emerald-900/72 hover:text-emerald-950">
                 {adjacent.prev.title} →
               </Link>
             ) : null}
