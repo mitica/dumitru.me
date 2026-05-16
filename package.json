@@ -1,51 +1,30 @@
 {
   "name": "dumitru.me",
-  "version": "0.1.0",
-  "description": "dumitru.me blog",
-  "engines": {
-    "node": "0.10",
-    "npm": "1.3"
+  "version": "2.0.0",
+  "private": true,
+  "description": "dumitru.me rebuilt with Next.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack && node scripts/create-legacy-html-aliases.mjs",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "deploy": "npm run build && gh-pages -d out --dotfiles"
   },
   "dependencies": {
-    "docpad": "~6.79.0",
-    "docpad-plugin-eco": "~2.1.0",
-    "docpad-plugin-ect": "~2.0.1",
-    "docpad-plugin-ghpages": "~2.4.4",
-    "docpad-plugin-less": "~2.4.1",
-    "docpad-plugin-marked": "~2.3.0",
-    "docpad-plugin-partials": "~2.9.2",
-    "docpad-plugin-rss": "~2.3.1",
-    "docpad-plugin-sunny": "~2.1.0",
-    "docpad-plugin-tags": "~2.0.7",
-    "moment": "~2.24.0",
-    "underscore": "~1.6.0"
+    "gray-matter": "^4.0.3",
+    "marked": "^13.0.2",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
-  "main": "docpad-server",
-  "scripts": {
-    "start": "docpad-server",
-    "deploy": "docpad deploy-ghpages --env static",
-    "test": "exit 0",
-    "docpad": "./node_modules/.bin/docpad"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Mitica/dumitru.me.git"
-  },
-  "keywords": [
-    "blog",
-    "dumitru",
-    "me"
-  ],
-  "author": "Dumitru Cantea",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Mitica/dumitru.me/issues"
-  },
-  "homepage": "https://github.com/Mitica/dumitru.me",
   "devDependencies": {
-    "coffee-script": "~1.7.1",
-    "grunt": "~0.4.4",
-    "grunt-contrib-concat": "~0.4.0",
-    "grunt-contrib-uglify": "~0.4.0"
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@tailwindcss/postcss": "^4.1.13",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.7.2"
   }
 }

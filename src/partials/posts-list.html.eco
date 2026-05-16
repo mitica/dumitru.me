@@ -1,5 +1,0 @@
-<div class="list post">
-	<% for item in @list: %>
-		<%- @partial('post-content', false, {item: item, moment: @moment}) %>
-	<% end %>
-</div>

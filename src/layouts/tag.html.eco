@@ -1,8 +1,0 @@
----
-layout: "default"
----
-<% blog = @db(@getCollection('html')).blog %>
-<h1><%= @document.title %></h1>
-<% tag = JSON.parse(@content) %>
-<%- @partial('posts-list', false, {list: @getCollection('blog').findAll({tags: '$in': [tag.tag]}).toJSON(), moment: @moment, partial: @partial}) %>
-</article>

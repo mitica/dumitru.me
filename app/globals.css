@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "FFTisa";
+  src: url("/fonts/ff-tisa.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FFTisa";
+  src: url("/fonts/ff-tisa-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FFTisa";
+  src: url("/fonts/ff-tisa-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "FFTisa", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+}
+
+.markdown {
+  color: rgb(68 64 60);
+  font-size: 1.04rem;
+  line-height: 1.9;
+}
+
+.markdown > :first-child {
+  margin-top: 0;
+}
+
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  color: rgb(28 25 23);
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.markdown h2 {
+  font-size: 1.65rem;
+}
+
+.markdown h3 {
+  font-size: 1.35rem;
+}
+
+.markdown h4 {
+  font-size: 1.15rem;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote,
+.markdown pre,
+.markdown figure,
+.markdown iframe {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.markdown ul,
+.markdown ol {
+  padding-left: 1.2rem;
+}
+
+.markdown a {
+  color: rgb(180 83 9);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgb(253 186 116);
+}
+
+.markdown a:hover {
+  color: rgb(154 52 18);
+}
+
+.markdown blockquote {
+  border-left: 3px solid rgb(253 186 116);
+  padding-left: 1rem;
+  color: rgb(87 83 78);
+}
+
+.markdown code {
+  background: rgb(255 247 237);
+  border: 1px solid rgb(254 215 170);
+  border-radius: 0.45rem;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.94em;
+}
+
+.markdown pre {
+  background: rgb(28 25 23);
+  color: rgb(254 243 199);
+  border-radius: 0.8rem;
+  border: 1px solid rgb(68 64 60);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.markdown pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.markdown img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  border: 1px solid rgb(231 229 228);
+}
+
+.markdown iframe {
+  width: 100%;
+  border: 1px solid rgb(231 229 228);
+  border-radius: 0.8rem;
+}
+
+.post-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-image.align-center {
+  text-align: center;
+}
+
+.post-image figcaption {
+  margin-top: 0.45rem;
+  color: rgb(120 113 108);
+  font-size: 0.88rem;
+}
+
+.post-image.size-big img {
+  max-width: 720px;
+}
