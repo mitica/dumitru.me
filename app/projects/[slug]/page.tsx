@@ -32,45 +32,62 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <article>
-      <header className="border-b border-stone-300/70 pb-6">
-        <p className="eyebrow">Proiect</p>
-        <h1 className="title-display mt-2 text-4xl font-semibold text-stone-950 md:text-5xl">
+      <header className="article-head">
+        <p className="dateline article-head__eyebrow">— proiect —</p>
+        <h1 className="article-head__title">
           {project.title}
-          {project.releaseYear ? <sup className="ml-2 text-xl text-stone-400">({project.releaseYear})</sup> : null}
+          {project.releaseYear ? <sup>{project.releaseYear}</sup> : null}
         </h1>
-        {project.summary ? <p className="section-copy mt-3">{project.summary}</p> : null}
+        {project.summary ? <p className="article-head__lead">{project.summary}</p> : null}
       </header>
 
-      <div className="mt-7 grid gap-6 lg:grid-cols-[230px_minmax(0,1fr)]">
-        <aside className="h-fit border-t border-stone-300/70 pt-4 lg:sticky lg:top-6">
-          <p className="text-sm text-stone-700">
-            <strong className="text-stone-950">Stare:</strong> {project.isAlive ? "Activ" : "Inactiv"}
-          </p>
+      <div className="project-meta">
+        <div className="project-meta__row">
+          <span className="project-meta__label">Stare</span>
+          <span
+            className={[
+              "project-entry__status",
+              project.isAlive ? "is-alive" : "is-retired"
+            ].join(" ")}
+          >
+            {project.isAlive ? "Activ" : "Inactiv"}
+          </span>
+        </div>
 
-          {project.links.length > 0 ? (
-            <div className="mt-4">
-              <h2 className="text-sm font-semibold uppercase tracking-[0.08em] text-stone-500">Linkuri</h2>
-              <ul className="mt-2 space-y-2 text-sm">
-                {project.links.map((link) => (
-                  <li key={link}>
-                    <a href={link} target="_blank" rel="noreferrer" className="text-cyan-800 underline decoration-cyan-300 underline-offset-3 hover:text-cyan-950">
-                      {link.replace(/^https?:\/\//, "")}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
+        {project.releaseYear ? (
+          <div className="project-meta__row">
+            <span className="project-meta__label">An</span>
+            <span className="project-meta__value">{project.releaseYear}</span>
+          </div>
+        ) : null}
 
-          <p className="mt-5">
-            <Link href="/projects" className="text-sm text-stone-600 hover:text-stone-950">
-              ← Înapoi la proiecte
-            </Link>
-          </p>
-        </aside>
-
-        <div className="markdown" dangerouslySetInnerHTML={{ __html: project.contentHtml }} />
+        {project.links.length > 0 ? (
+          <div className="project-meta__row project-meta__row--links">
+            <span className="project-meta__label">Linkuri</span>
+            <ul className="project-meta__links">
+              {project.links.map((link) => (
+                <li key={link}>
+                  <a href={link} target="_blank" rel="noreferrer">
+                    → {link.replace(/^https?:\/\//, "")}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
       </div>
+
+      <div
+        className="markdown"
+        style={{ marginTop: "2rem" }}
+        dangerouslySetInnerHTML={{ __html: project.contentHtml }}
+      />
+
+      <footer className="article-foot">
+        <Link href="/projects" className="project-aside__back">
+          ← Înapoi la proiecte
+        </Link>
+      </footer>
     </article>
   );
 }

@@ -32,19 +32,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   const adjacent = getAdjacentPosts(post.slug);
+  const allPosts = getAllPosts();
+  const index = allPosts.findIndex((p) => p.slug === post.slug);
+  const issue = allPosts.length - index;
 
   return (
     <article>
-      <header className="border-b border-stone-300/70 pb-6">
-        <p className="eyebrow">Articol</p>
-        <h1 className="title-display mt-2 text-4xl font-semibold text-stone-950 md:text-5xl">{post.title}</h1>
-        <p className="mt-3 text-sm text-stone-500">{formatDateRo(post.dateValue)}</p>
+      <header className="article-head">
+        <p className="dateline article-head__eyebrow">
+          — articol Nº&nbsp;{String(issue).padStart(2, "0")} —
+        </p>
+        <h1 className="article-head__title">{post.title}</h1>
+        <p className="article-head__meta">{formatDateRo(post.dateValue)}</p>
       </header>
 
-      <div className="markdown mt-7" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+      <div className="markdown" style={{ marginTop: "1.8rem" }} dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
 
-      <footer className="mt-8 border-t border-stone-300/70 pt-6">
-        <div className="flex flex-wrap gap-2">
+      <footer className="article-foot">
+        <div className="post-entry__tags" style={{ display: "flex", flexWrap: "wrap", gap: "0.45rem 0.85rem" }}>
           {post.tags.map((tag) => (
             <Link key={`${post.slug}-${tag}`} href={`/tags/${normalizeTagSlug(tag)}`} className="chip">
               {tag}
@@ -52,23 +57,23 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           ))}
         </div>
 
-        <div className="mt-6 grid gap-2 text-sm sm:grid-cols-2">
-          <div>
+        <nav className="article-nav" aria-label="Navigare articole">
+          <div className="article-nav__prev">
             {adjacent.next ? (
-              <Link href={`/blog/${adjacent.next.slug}`} className="text-stone-600 hover:text-stone-950">
-                ← {adjacent.next.title}
+              <Link href={`/blog/${adjacent.next.slug}`}>
+                ← <span style={{ textTransform: "none", letterSpacing: 0 }}>{adjacent.next.title}</span>
               </Link>
             ) : null}
           </div>
 
-          <div className="text-left sm:text-right">
+          <div className="article-nav__next">
             {adjacent.prev ? (
-              <Link href={`/blog/${adjacent.prev.slug}`} className="text-stone-600 hover:text-stone-950">
-                {adjacent.prev.title} →
+              <Link href={`/blog/${adjacent.prev.slug}`}>
+                <span style={{ textTransform: "none", letterSpacing: 0 }}>{adjacent.prev.title}</span> →
               </Link>
             ) : null}
           </div>
-        </div>
+        </nav>
       </footer>
     </article>
   );

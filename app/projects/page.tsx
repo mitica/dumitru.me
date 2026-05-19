@@ -10,25 +10,41 @@ export default function ProjectsPage() {
   const { active, inactive } = splitProjectsByStatus(getAllProjects());
 
   return (
-    <section className="space-y-10">
-      <div>
-        <p className="eyebrow">Portofoliu</p>
-        <h1 className="title-display mt-2 text-4xl font-semibold text-stone-950">Proiecte</h1>
-        <p className="section-copy mt-2">Lista proiectelor active și a celor închise.</p>
-      </div>
+    <section>
+      <header className="article-head">
+        <p className="dateline article-head__eyebrow">— portofoliu —</p>
+        <h1 className="article-head__title">Proiecte</h1>
+        <p className="article-head__lead">
+          Lista proiectelor active și a celor închise.
+        </p>
+      </header>
 
-      <div className="space-y-4">
-        <h2 className="title-display text-2xl font-semibold text-stone-950">
-          Proiecte active <sup className="text-stone-400">{active.length}</sup>
-        </h2>
+      <div style={{ marginTop: "2rem" }}>
+        <header className="section-head">
+          <p className="dateline section-head__eyebrow">— curent —</p>
+          <h2 className="section-head__title">
+            Proiecte active{" "}
+            <sup style={{ fontFamily: "var(--mono)", fontSize: "0.55em", color: "var(--accent)" }}>
+              {String(active.length).padStart(2, "0")}
+            </sup>
+          </h2>
+        </header>
         <ProjectsGrid projects={active} />
       </div>
 
-      <div className="space-y-4">
-        <h2 className="title-display text-2xl font-semibold text-stone-950">
-          Proiecte inactive <sup className="text-stone-400">{inactive.length}</sup>
-        </h2>
-        <p className="section-copy">Proiectele nereușite m-au învățat la fel de mult ca cele reușite.</p>
+      <div style={{ marginTop: "2.6rem" }}>
+        <header className="section-head">
+          <p className="dateline section-head__eyebrow">— arhivă —</p>
+          <h2 className="section-head__title">
+            Proiecte inactive{" "}
+            <sup style={{ fontFamily: "var(--mono)", fontSize: "0.55em", color: "var(--muted-strong)" }}>
+              {String(inactive.length).padStart(2, "0")}
+            </sup>
+          </h2>
+        </header>
+        <p className="section-copy" style={{ marginBottom: "0.8rem" }}>
+          Proiectele nereușite m-au învățat la fel de mult ca cele reușite.
+        </p>
         <ProjectsGrid projects={inactive} />
       </div>
     </section>

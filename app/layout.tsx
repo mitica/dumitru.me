@@ -4,7 +4,7 @@ import Link from "next/link";
 import "./globals.css";
 import { MainNav } from "@/components/main-nav";
 import { TagCloud } from "@/components/tag-cloud";
-import { getTags } from "@/lib/content";
+import { getAllPosts, getTags } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: {
@@ -16,46 +16,68 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const tags = getTags();
+  const issue = String(getAllPosts().length).padStart(3, "0");
+  const year = new Date().getFullYear();
 
   return (
     <html lang="ro">
-      <body className="site-bg min-h-screen antialiased selection:bg-cyan-200/70 selection:text-stone-950">
-        <div className="mx-auto max-w-6xl px-4 py-5 md:px-6 md:py-7">
-          <header className="border-b border-stone-300/70 pb-5">
-            <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
-              <div className="flex items-center gap-4">
-                <Link href="/" aria-label="dumitru.me - homepage" className="avatar-ring block overflow-hidden rounded-full">
-                  <Image src="/img/face.jpg" alt="Dumitru Cantea" width={58} height={58} className="h-[58px] w-[58px] object-cover" priority />
-                </Link>
+      <body className="site-bg min-h-screen antialiased">
+        <div className="site-shell">
+          <header className="site-header">
+            <div className="site-dateline">
+              <span>
+                <span className="bullet-star">★</span>
+                DUMITRU.ME — Nº&nbsp;{issue} — IALOVENI — {year}
+              </span>
+              <span>RO · est. 2005</span>
+            </div>
 
-                <div>
-                  <Link href="/" className="title-display block text-2xl font-semibold text-stone-950 md:text-3xl">
-                    dumitru.me
-                  </Link>
-                  <p className="mt-1 text-sm text-stone-600">IT Engineer</p>
-                </div>
-              </div>
+            <div className="site-header__row">
+              <Link href="/" aria-label="dumitru.me — homepage" className="site-brand">
+                <Image
+                  src="/img/face.jpg"
+                  alt="Dumitru Cantea"
+                  width={56}
+                  height={56}
+                  className="site-brand__face"
+                  priority
+                />
+                <span className="site-brand__text">
+                  <span className="site-brand__title">
+                    dumitru<span className="dot-accent">.</span>me
+                  </span>
+                  <span className="site-brand__sub">Dumitru Cantea · IT engineer</span>
+                </span>
+              </Link>
 
               <MainNav />
             </div>
           </header>
 
-          <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_240px]">
-            <main className="min-w-0">{children}</main>
+          <div className="site-grid">
+            <main className="site-main">{children}</main>
 
-            <aside className="h-fit border-t border-stone-300/70 pt-5 lg:sticky lg:top-6">
-              <h2 className="text-base font-semibold text-stone-950">Tags</h2>
-              <p className="mt-1 text-sm text-stone-600">Explorează postările după subiect.</p>
-              <div className="mt-4">
+            <aside className="site-aside">
+              <div className="aside-section">
+                <p className="dateline" style={{ color: "var(--accent)" }}>— index —</p>
+                <h2 className="aside-section__title">Tag-uri</h2>
+                <p className="aside-section__lead">Explorează postările după subiect.</p>
                 <TagCloud tags={tags} />
               </div>
             </aside>
           </div>
 
-          <footer className="mt-12 border-t border-stone-300/70 pt-6 text-sm text-stone-600">
-            <p>
-              <strong className="text-stone-950">dumitru.me</strong> - Dumitru Cantea.
-            </p>
+          <footer className="site-footer">
+            <div className="site-footer__inner">
+              <p className="dateline" style={{ color: "var(--accent)" }}>— colophon —</p>
+              <p className="site-footer__lead">
+                <strong>dumitru.me</strong> — Dumitru Cantea, {year}.
+              </p>
+              <p className="site-footer__note">
+                Tipărit în <span className="mono">FFTisa</span> · construit cu{" "}
+                <span className="mono">Next.js</span> · linkurile vechi <span className="mono">*.html</span> încă răspund.
+              </p>
+            </div>
           </footer>
         </div>
       </body>

@@ -33,14 +33,18 @@ export default async function TagPage({ params }: TagPageProps) {
   const posts = getPostsByTagSlug(slug);
 
   return (
-    <section className="space-y-5">
-      <div>
-        <p className="eyebrow">Tag</p>
-        <h1 className="title-display mt-2 text-4xl font-semibold text-stone-950">{tag.name}</h1>
-        <p className="section-copy mt-2">{tag.count} articole cu acest tag.</p>
-      </div>
+    <section>
+      <header className="article-head">
+        <p className="dateline article-head__eyebrow">— rubrică · tag —</p>
+        <h1 className="article-head__title">{tag.name}</h1>
+        <p className="article-head__meta">
+          {tag.count} {tag.count === 1 ? "articol" : "articole"} cu acest tag
+        </p>
+      </header>
 
-      <PostsList posts={posts} />
+      <div style={{ marginTop: "1.6rem" }}>
+        <PostsList posts={posts} />
+      </div>
     </section>
   );
 }

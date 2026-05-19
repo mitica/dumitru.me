@@ -10,14 +10,21 @@ export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <section className="space-y-5">
-      <div>
-        <p className="eyebrow">Jurnal tehnic</p>
-        <h1 className="title-display mt-2 text-4xl font-semibold text-stone-950">Blog</h1>
-        <p className="section-copy mt-2">Toate articolele, ordonate de la cel mai nou la cel mai vechi.</p>
-      </div>
+    <section>
+      <header className="article-head">
+        <p className="dateline article-head__eyebrow">— jurnal tehnic —</p>
+        <h1 className="article-head__title">Blog</h1>
+        <p className="article-head__lead">
+          Toate articolele, ordonate de la cel mai nou la cel mai vechi.{" "}
+          <span className="mono" style={{ fontSize: "0.85em", color: "var(--muted-strong)" }}>
+            ({posts.length} ediții)
+          </span>
+        </p>
+      </header>
 
-      <PostsList posts={posts} />
+      <div style={{ marginTop: "1.6rem" }}>
+        <PostsList posts={posts} />
+      </div>
     </section>
   );
 }
