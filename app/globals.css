@@ -677,6 +677,7 @@ body {
   letter-spacing: -0.012em;
   color: var(--ink);
   margin: 0;
+  overflow-wrap: anywhere;
 }
 
 .post-entry__title a {
@@ -723,6 +724,8 @@ body {
   color: var(--ink-soft);
   font-size: 1.02rem;
   line-height: 1.55;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 /* ---------- Chips (tags inline) ---------- */
@@ -851,6 +854,7 @@ body {
   color: var(--ink-soft);
   font-size: 1rem;
   line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 /* ---------- Article header (single post / project) ---------- */
