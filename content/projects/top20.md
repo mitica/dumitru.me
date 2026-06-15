@@ -1,7 +1,7 @@
 ---
 title: Top20.md
 summary: Clasament și statistici web
-isAlive: true
+isAlive: false
 releaseDate: '2007-02-03'
 links:
   - 'http://www.top20.md'
@@ -31,6 +31,6 @@ Aș dori să fie folosit de mai multe site-uri mari de la noi.
 
 ## Starea actuală
 
-La etapa actuală proiectul este funcțional, dar este într-o 'criză existențială' acută, și asta datorită Google Analytics. S-ar putea spune că proiectul a îmbătrânit.
+Top20.md a îmbătrânit. La un moment dat proiectul a intrat într-o 'criză existențială' acută: clasamentul se baza tot mai mult pe informații care nu mai puteau fi verificate ușor, iar de ceva timp căutam o nouă formă pentru el.
 
-De ceva timp caut o nouă formă pentru acest proiect, una mai acceptabilă pentru clienții Top20.md...
+> **Notă:** Top20.md a renăscut sub o formă nouă — [WebWatch.md](/projects/webwatch). În loc de un clasament construit pe date care îmbătrânesc, WebWatch măsoară automat și în timp real starea site-urilor din Moldova (disponibilitate, viteză, HTTPS, compatibilitate mobilă) și calculează un scor verificabil de oricine. Principiul noii forme: *un clasament merită încredere doar dacă se bazează pe lucruri măsurabile azi și verificabile de oricine.*
