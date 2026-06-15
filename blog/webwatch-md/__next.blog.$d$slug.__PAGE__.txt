@@ -1,0 +1,24 @@
+1:"$Sreact.fragment"
+3:I[8500,["500","static/chunks/500-c99b8dfd3de17c86.js","953","static/chunks/app/blog/%5Bslug%5D/page-5d011eba6668cace.js"],""]
+8:I[484,[],"OutletBoundary"]
+9:"$Sreact.suspense"
+2:Tada,<p><img src="/img/projects/webwatch/home-01.jpg" alt="WebWatch.md - Webul Moldovei, măsurat în timp real"></p>
+<p>De ani buni căutam o nouă formă pentru <a href="/projects/top20">Top20.md</a>, primul meu proiect. Acum o are, dar sub un nume nou: <a href="https://webwatch.md/">WebWatch.md</a>.</p>
+<p>Top20.md a fost un clasament al site-urilor din Republica Moldova. În timp, însă, s-a bazat tot mai mult pe informații care îmbătrâneau și pe care nimeni nu le mai putea verifica ușor. De aici și „criza existențială” despre care am tot scris.</p>
+<p>WebWatch pornește de la principiul opus: <strong>un clasament merită încredere doar dacă se bazează pe lucruri măsurabile azi și verificabile de oricine.</strong></p>
+<h2>Ce face</h2>
+<p>WebWatch este un sistem automat care monitorizează în mod continuu site-urile care se adresează publicului din Moldova. Pentru fiecare site verifică, automat, dacă este online, cât de repede răspunde, dacă folosește HTTPS, dacă se afișează corect pe telefon și ce tehnologii folosește. Din aceste măsurători rezultă un singur Scor (de la 0 la 100), însoțit de istoricul complet.</p>
+<p>Măsurătorile se fac în trei ritmuri: o verificare zilnică a primei pagini, o verificare lunară completă și o reîmprospătare trimestrială a datelor de registru și de rețea. Scorurile sunt arhivate lunar și nu se recalculează, așa că graficele istorice rămân stabile chiar dacă metodologia evoluează.</p>
+<p><img src="/img/projects/webwatch/dashboard-01.jpg" alt="WebWatch.md - schimbările din ultimele 24 de ore și mișcarea scorului"></p>
+<p>Observatorul adună totul într-o singură imagine: sănătatea generală a webului .md, cu procente pentru online, HTTPS, prietenie cu mobilul, PageSpeed și scorul median.</p>
+<p><img src="/img/projects/webwatch/observatory-01.jpg" alt="WebWatch.md - Observatorul cu sănătatea generală a webului .md"></p>
+<h2>Cifrele vin din măsurători, opiniile au semnătură</h2>
+<p>Acesta e principiul care îmi place cel mai mult la noua formă a proiectului. Nicio statistică de pe site nu este generată de un model AI — toate metricile provin din măsurători automate, reproductibile. Textele editoriale sunt redactate cu ajutorul AI pe baza datelor măsurate, dar sunt apoi editate și semnate de un om, iar metodologia este documentată public.</p>
+<p>În loc să caut la nesfârșit o nouă formă pentru un clasament vechi, am pornit de la zero, dar de la o idee mult mai onestă: să măsor, nu să presupun.</p>
+<p>Poți citi mai multe pe pagina de <a href="/projects/webwatch">proiect</a> sau direct pe <a href="https://webwatch.md/">webwatch.md</a>, inclusiv <a href="https://webwatch.md/methodology">metodologia completă</a>.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","header",null,{"className":"article-head","children":[["$","p",null,{"className":"dateline article-head__eyebrow","children":["— articol Nº ","11"," —"]}],["$","h1",null,{"className":"article-head__title","children":"WebWatch.md - Top20.md a renăscut, măsurat în timp real"}],["$","p",null,{"className":"article-head__meta","children":"luni, 15 iun. 2026"}]]}],["$","div",null,{"className":"markdown","style":{"marginTop":"1.8rem"},"dangerouslySetInnerHTML":{"__html":"$2"}}],["$","footer",null,{"className":"article-foot","children":[["$","div",null,{"className":"post-entry__tags","style":{"display":"flex","flexWrap":"wrap","gap":"0.45rem 0.85rem"},"children":[["$","$L3","webwatch-md-WebWatch",{"href":"/tags/webwatch","className":"chip","children":"WebWatch"}],"$L4","$L5"]}],"$L6"]}]]}],null,"$L7"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"LN2KhikodeIDHoUIX6tGP"}
+4:["$","$L3","webwatch-md-Top20",{"href":"/tags/top20","className":"chip","children":"Top20"}]
+5:["$","$L3","webwatch-md-Moldova",{"href":"/tags/moldova","className":"chip","children":"Moldova"}]
+6:["$","nav",null,{"className":"article-nav","aria-label":"Navigare articole","children":[["$","div",null,{"className":"article-nav__prev","children":null}],["$","div",null,{"className":"article-nav__next","children":["$","$L3",null,{"href":"/blog/topcurious-com","children":[["$","span",null,{"style":{"textTransform":"none","letterSpacing":0},"children":"TopCurious.com - Topuri curioase generate de AI"}]," →"]}]}]]}]
+7:["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]
+a:null

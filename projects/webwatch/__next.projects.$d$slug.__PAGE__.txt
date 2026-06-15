@@ -1,0 +1,48 @@
+1:"$Sreact.fragment"
+5:I[8500,["500","static/chunks/500-c99b8dfd3de17c86.js","419","static/chunks/app/projects/%5Bslug%5D/page-5d011eba6668cace.js"],""]
+6:I[484,[],"OutletBoundary"]
+7:"$Sreact.suspense"
+2:T13a9,<p>WebWatch este un sistem automat de monitorizare a site-urilor din Republica Moldova. Verifică în mod continuu site-urile care se adresează publicului din Moldova — indiferent de extensia domeniului — și păstrează un istoric al stării lor.</p>
+<p>Pentru fiecare site, sistemul urmărește dacă este online, cât de repede răspunde, dacă folosește HTTPS, dacă se afișează corect pe telefon și ce tehnologii folosește. Din aceste măsurători rezultă un singur Scor, însoțit de istoricul complet.</p>
+<p>Mottoul proiectului spune totul: <strong>„Webul Moldovei, măsurat în timp real”</strong>.</p>
+<h2>De unde provine</h2>
+<p>WebWatch este forma nouă a primului meu proiect, <a href="/projects/top20">Top20.md</a>. Top20.md a fost un clasament construit, în timp, pe informații care îmbătrâneau și nu mai puteau fi verificate ușor.</p>
+<p>Am reconstruit proiectul în jurul unui principiu simplu: <em>un clasament merită încredere doar dacă se bazează pe lucruri măsurabile azi și verificabile de oricine.</em> Această schimbare de gândire a dus la un nume nou și la o orientare nouă — date curente și verificabile, în locul unor clasamente statice.</p>
+<h2>Problema</h2>
+<p>Pe internetul din Moldova lipsește o sursă independentă, transparentă și actualizată despre starea reală a site-urilor: care funcționează, care sunt sigure, care se afișează corect pe telefon și care au rămas în urmă.</p>
+<p>Clasamentele vechi se bazau pe date pe care nimeni nu le mai putea verifica. WebWatch pornește de la ideea opusă: fiecare cifră trebuie să vină dintr-o măsurătoare reproductibilă, nu dintr-o estimare sau dintr-o părere.</p>
+<h2>Cum funcționează</h2>
+<p>Măsurătorile se fac automat, în trei ritmuri:</p>
+<ul>
+<li><strong>zilnic</strong> — o vizită pe prima pagină a fiecărui site, pentru disponibilitate, viteză, HTTPS și schimbări de conținut;</li>
+<li><strong>lunar</strong> — o verificare completă a paginii principale: HTTPS, compatibilitate mobilă, tehnologii folosite și viteza de încărcare;</li>
+<li><strong>trimestrial</strong> — reîmprospătarea datelor de registru și de rețea (domeniu, găzduire, configurația de securitate a email-ului).</li>
+</ul>
+<p>Scorul este pe o scară de la 0 la 100 și este calculat exclusiv din semnale măsurabile: disponibilitatea în fereastra de observare, performanța (PageSpeed), HTTPS, prietenia cu dispozitivele mobile, prospețimea conținutului și interesul din catalog. Un semnal încă nemăsurat nu trage scorul în jos, iar scorurile sunt arhivate lunar și nu se recalculează — așa graficele istorice rămân stabile chiar dacă metodologia evoluează.</p>
+<p>Un site este admis în catalog dacă este făcut pentru publicul din Moldova. Verificarea automată cântărește mai multe semnale: marcajul regional ro-MD, telefon sau adresă din Moldova, limba română, prețuri în lei, domeniu .md, găzduire locală și legături către alte site-uri moldovenești.</p>
+<h2>Ce ține de om și ce ține de mașină</h2>
+<p>Principiul proiectului este clar: <strong>cifrele vin din măsurători, opiniile au semnătură.</strong> Nicio statistică nu este generată de un model AI — toate metricile provin din măsurători automate.</p>
+<p>Textele editoriale sunt o altă poveste: sunt redactate cu ajutorul AI pe baza datelor măsurate, apoi editate și semnate de un om. Toate înscrierile trec printr-o verificare umană înainte de a intra în catalog. Întreaga metodologie este documentată public și transparentă.</p>
+<h2>Capturi de ecran</h2>
+<div class="project-screenshots">
+  <figure>
+    <img src="/img/projects/webwatch/home-01.jpg" alt="WebWatch.md - prima pagină cu mottoul „Webul Moldovei, măsurat în timp real”" />
+    <figcaption>Prima pagină: starea webului moldovenesc și căutarea după domeniu.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/projects/webwatch/dashboard-01.jpg" alt="WebWatch.md - schimbările din ultimele 24 de ore și mișcarea scorului" />
+    <figcaption>Ce s-a schimbat în ultimele 24 de ore și mișcarea lunară a scorurilor.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/projects/webwatch/observatory-01.jpg" alt="WebWatch.md - Observatorul cu sănătatea generală a webului .md" />
+    <figcaption>Observatorul: sănătatea generală a webului .md — HTTPS, mobil, PageSpeed și scor median.</figcaption>
+  </figure>
+</div>
+
+<h2>Starea actuală</h2>
+<p>Proiectul este activ. În prezent monitorizează peste 1.000 de site-uri și oferă, pe lângă scor, un director căutabil al site-urilor din Moldova, jurnale de schimbări din ultimele 24 de ore, mișcările lunare ale scorurilor și diverse perspective de securitate (de exemplu, adoptarea DMARC).</p>
+<p>Pentru mine, WebWatch este răspunsul la „criza existențială” a Top20.md: în loc să caut o nouă formă pentru un clasament vechi, am pornit de la zero, dar de la o idee mult mai onestă — să măsor, nu să presupun.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","header",null,{"className":"article-head","children":[["$","p",null,{"className":"dateline article-head__eyebrow","children":"— proiect —"}],["$","h1",null,{"className":"article-head__title","children":["WebWatch.md",["$","sup",null,{"children":2026}]]}],["$","p",null,{"className":"article-head__lead","children":"Webul Moldovei, măsurat în timp real"}]]}],["$","div",null,{"className":"project-meta","children":[["$","div",null,{"className":"project-meta__row","children":[["$","span",null,{"className":"project-meta__label","children":"Stare"}],["$","span",null,{"className":"project-entry__status is-alive","children":"Activ"}]]}],["$","div",null,{"className":"project-meta__row","children":[["$","span",null,{"className":"project-meta__label","children":"An"}],["$","span",null,{"className":"project-meta__value","children":2026}]]}],["$","div",null,{"className":"project-meta__row project-meta__row--links","children":[["$","span",null,{"className":"project-meta__label","children":"Linkuri"}],["$","ul",null,{"className":"project-meta__links","children":[["$","li","https://webwatch.md/",{"children":["$","a",null,{"href":"https://webwatch.md/","target":"_blank","rel":"noreferrer","children":["→ ","webwatch.md/"]}]}]]}]]}]]}],["$","div",null,{"className":"markdown","style":{"marginTop":"2rem"},"dangerouslySetInnerHTML":{"__html":"$2"}}],"$L3"]}],null,"$L4"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"LN2KhikodeIDHoUIX6tGP"}
+3:["$","footer",null,{"className":"article-foot","children":["$","$L5",null,{"href":"/projects","className":"project-aside__back","children":"← Înapoi la proiecte"}]}]
+4:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null
