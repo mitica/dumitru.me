@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+5:I[8500,["500","static/chunks/500-c99b8dfd3de17c86.js","953","static/chunks/app/blog/%5Bslug%5D/page-5d011eba6668cace.js"],""]
+6:I[484,[],"OutletBoundary"]
+7:"$Sreact.suspense"
+2:Tbdb,<p><img src="/img/blog/harness-wide.png" alt="Harness statistici"></p>
+<p>Am plecat pe 16 august. Pe 19 a intrat în sistemul pe care l-am construit un om care de atunci a scris în el mai mult decât oricine. Nu ne-am suprapus niciodată, nici măcar pe un commit.</p>
+<p>Două luni am construit la Laziar, o platformă media din Chișinău, un harness agentic — un repo în care agenții AI urmează un flux: brief → epic → plan → task. Harnessul controlează alte zece repo-uri; el ține doar gândirea. Fiecare task își numește repo-ul țintă, comanda exactă cu care se verifică și dovada că a fost verificat. Un reviewer automat citește diff-ul înainte de orice commit. Deciziile mari devin ADR-uri imutabile. Iar convențiile nu descriu idealul, ci starea măsurată, cu dată: „la 19 august, 35 din 63 de entități sunt încă în locul greșit&quot;. Un agent care citește minciuni politicoase produce muncă politicoasă și greșită.</p>
+<p>Prin el au trecut: motorul de recomandări, rescris de la zero pe embeddings și devenit implicit în producție; un sistem propriu de push notifications pe iOS, Android și web; upgrade la toate repozitoriile + o mulțime de teste (+ developeri nemulțumiți). De asemenea: chestionarul zilei și reacțiile vizitatorilor.</p>
+<blockquote>
+<p>1079 de commit-uri de pe 18 iunie. 570 sunt ale mele. Ultimul, pe 16 august seara — am plecat.</p>
+</blockquote>
+<p>De atunci: 431 de commit-uri, făcute de trei oameni. 264 de taskuri noi, 28 de planuri, 9 epic-uri și 6 decizii de arhitectură pe care nu le-am luat eu. Ritmul, pe săptămâni: 156 în ultima mea săptămână acolo, apoi 124, 132, 88, iar acum 86 în cinci zile. Ultimul commit e de azi-dimineață.</p>
+<h3>Ce am învățat</h3>
+<ol>
+<li>Demo-urile și codul deschis de pe net sunt folositoare, dar soluția nu poate fi decât personalizată. Fiecare proiect are stack-ul, bugetul și echipa lui.</li>
+<li>Nu e ușor să convingi un developer să folosească un harness agentic zi de zi. Să convingi întreaga echipă e aproape imposibil.</li>
+<li>De aceea soluția e bine să fie cât se poate de simplă. Să se simtă ca o unealtă, nu ca un nou job.</li>
+<li>Omul nu dispare — rolul lui devine și mai important. Fiecare programator devine specialistul care înțelege proiectul la care lucrează și decide.</li>
+<li>Un harness care supraviețuiește autorului nu ține de prompturi bune. Ține de a scrie regulile astfel încât să funcționeze pentru cineva care nu te poate întreba.</li>
+<li>Orice harness are nevoie de îmbunătățiri periodice. Am testat mult și am greșit mult; cred că și ăsta mai are de îmbunătățit — sper ca cei de la Laziar s-o facă fără mine.</li>
+</ol>
+<p>Și partea mai puțin flatantă, fiindcă face parte din aceeași poveste: am plecat fiindcă pierdeam prea mult timp implementând taskuri. Construisem o mașină care planifică, verifică și livrează — și o foloseam ca să închid tichete interne. Sistemul scala. Eu, nu.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","header",null,{"className":"article-head","children":[["$","p",null,{"className":"dateline article-head__eyebrow","children":["— articol Nº ","12"," —"]}],["$","h1",null,{"className":"article-head__title","children":"Harnessul care a rămas"}],["$","p",null,{"className":"article-head__meta","children":"vineri, 11 sept. 2026"}]]}],["$","div",null,{"className":"markdown","style":{"marginTop":"1.8rem"},"dangerouslySetInnerHTML":{"__html":"$2"}}],"$L3"]}],null,"$L4"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6p8Ch88kjviua9XmZsU8r"}
+3:["$","footer",null,{"className":"article-foot","children":[["$","div",null,{"className":"post-entry__tags","style":{"display":"flex","flexWrap":"wrap","gap":"0.45rem 0.85rem"},"children":[["$","$L5","harness-laziar-harness",{"href":"/tags/harness","className":"chip","children":"harness"}],["$","$L5","harness-laziar-Laziar",{"href":"/tags/laziar","className":"chip","children":"Laziar"}],["$","$L5","harness-laziar-AI",{"href":"/tags/ai","className":"chip","children":"AI"}]]}],["$","nav",null,{"className":"article-nav","aria-label":"Navigare articole","children":[["$","div",null,{"className":"article-nav__prev","children":null}],["$","div",null,{"className":"article-nav__next","children":["$","$L5",null,{"href":"/blog/webwatch-md","children":[["$","span",null,{"style":{"textTransform":"none","letterSpacing":0},"children":"WebWatch.md - Top20.md a renăscut, măsurat în timp real"}]," →"]}]}]]}]]}]
+4:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null
