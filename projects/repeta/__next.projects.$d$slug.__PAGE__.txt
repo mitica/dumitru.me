@@ -42,7 +42,7 @@
 
 <h2>Starea actuală</h2>
 <p>Proiectul este activ și în dezvoltare. Direcția este să îmbunătățesc experiența zilnică, să extind subiectele disponibile și să fac aplicația cât mai ușor de folosit pentru oameni care vor să învețe constant, fără să simtă că intră într-un curs formal.</p>
-0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","h1",null,{"children":"Repeta.app"}],["$","p",null,{"className":"sub","children":"Învățare prin repetiție inteligentă"}],["$","p",null,{"className":"meta","children":[["$","span",null,{"children":"în lucru, 2026"}],[["$","a","https://repeta.app",{"href":"https://repeta.app","children":"repeta.app"}]]]}],["$","div",null,{"className":"markdown","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","p",null,{"className":"sign with-mark","children":["$L3","Dumitru Cantea"]}]]}],null,"$L4"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GNEdz98_8iP6qDVFHNhAO"}
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","h1",null,{"children":"Repeta.app"}],["$","p",null,{"className":"sub","children":"Învățare prin repetiție inteligentă"}],["$","p",null,{"className":"meta","children":[["$","span",null,{"children":"în lucru, 2026"}],[["$","a","https://repeta.app",{"href":"https://repeta.app","children":"repeta.app"}]]]}],["$","div",null,{"className":"markdown","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","p",null,{"className":"sign with-mark","children":["$L3","Dumitru Cantea"]}]]}],null,"$L4"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9MkYf0fkIdMTctV3CeyMP"}
 3:["$","$L5",null,{"size":34}]
 4:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null
