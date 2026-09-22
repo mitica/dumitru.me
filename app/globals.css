@@ -58,7 +58,7 @@ a {
 }
 
 a:focus-visible,
-.portrait-slot:focus-visible {
+.mark:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 3px;
   border-radius: 2px;
@@ -122,19 +122,20 @@ a:focus-visible,
   text-underline-offset: 5px;
 }
 
-.with-portrait {
+.with-mark {
   position: relative;
 }
 
-.portrait-slot {
+.mark {
   position: absolute;
-  right: calc(100% + 1.4rem);
-  top: 0.12em;
+  right: calc(100% + 1.25rem);
+  top: 0.2em;
   line-height: 0;
+  color: var(--ink);
   text-decoration: none;
 }
 
-.portrait {
+.fish {
   display: block;
 }
 
@@ -412,7 +413,7 @@ h1 {
   color: var(--quiet);
 }
 
-.sign .portrait-slot {
+.sign .mark {
   top: 50%;
   transform: translateY(-50%);
 }
@@ -453,7 +454,7 @@ h1 {
     font-size: 1.4rem;
   }
 
-  .with-portrait .portrait-slot {
+  .with-mark .mark {
     position: static;
     display: block;
     width: fit-content;
@@ -461,9 +462,9 @@ h1 {
     transform: none;
   }
 
-  .portrait {
-    width: 40px;
-    height: 40px;
+  .fish {
+    width: 46px;
+    height: auto;
   }
 }
 

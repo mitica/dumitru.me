@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Portrait } from "@/components/portrait";
+import { Fish } from "@/components/fish";
 import { ProjectsGrid } from "@/components/projects-grid";
 import { getAllProjects, splitProjectsByStatus } from "@/lib/content";
 
@@ -12,8 +12,8 @@ export default function ProjectsPage() {
 
   return (
     <section>
-      <h1 className="with-portrait">
-        <Portrait size={48} />
+      <h1 className="with-mark">
+        <Fish width={58} />
         Proiecte
       </h1>
 

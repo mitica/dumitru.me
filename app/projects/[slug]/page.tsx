@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Portrait } from "@/components/portrait";
+import { Fish } from "@/components/fish";
 import { getAllProjects, getProjectBySlug } from "@/lib/content";
 
 type ProjectPageProps = {
@@ -55,8 +55,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
       <div className="markdown" dangerouslySetInnerHTML={{ __html: project.contentHtml }} />
 
-      <p className="sign with-portrait">
-        <Portrait size={36} />
+      <p className="sign with-mark">
+        <Fish width={44} />
         Dumitru Cantea
       </p>
     </article>

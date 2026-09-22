@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Portrait } from "@/components/portrait";
+import { Fish } from "@/components/fish";
 import { PostsList } from "@/components/posts-list";
 import { ProjectsGrid } from "@/components/projects-grid";
 import { getAllPosts, getAllProjects, splitProjectsByStatus } from "@/lib/content";
@@ -10,8 +10,8 @@ export default function HomePage() {
 
   return (
     <>
-      <p className="lede with-portrait">
-        <Portrait size={56} />
+      <p className="lede with-mark">
+        <Fish width={72} />
         Dumitru Cantea. IT engineer. Ce e în lucru, și ce a rămas în urmă.
       </p>
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Portrait } from "@/components/portrait";
+import { Fish } from "@/components/fish";
 import { formatDateRo } from "@/lib/format";
 import { getAdjacentPosts, getAllPosts, getPostBySlug, normalizeTagSlug } from "@/lib/content";
 
@@ -43,8 +43,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       <div className="markdown" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
 
-      <p className="sign with-portrait">
-        <Portrait size={36} />
+      <p className="sign with-mark">
+        <Fish width={44} />
         Dumitru Cantea
       </p>
 
