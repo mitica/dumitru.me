@@ -1,6 +1,7 @@
 1:"$Sreact.fragment"
-2:I[8500,["500","static/chunks/500-c99b8dfd3de17c86.js","437","static/chunks/437-285d16e218f1ab6c.js","974","static/chunks/app/page-348cf74dfff03aee.js"],""]
-3:I[484,[],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","section",null,{"children":[["$","header",null,{"className":"article-head","children":[["$","p",null,{"className":"dateline article-head__eyebrow","children":"— eroare 404 —"}],["$","h1",null,{"className":"article-head__title","children":"Pagina nu a fost găsită"}],["$","p",null,{"className":"article-head__lead","children":"Link-ul poate fi vechi sau invalid."}]]}],["$","p",null,{"style":{"marginTop":"1.6rem"},"children":["$","$L2",null,{"href":"/","className":"mono","style":{"fontFamily":"var(--mono)","fontSize":"0.78rem","letterSpacing":"0.16em","textTransform":"uppercase","color":"var(--accent)","textDecoration":"underline","textDecorationColor":"var(--accent)","textUnderlineOffset":"4px"},"children":"← Înapoi la prima pagină"}]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6p8Ch88kjviua9XmZsU8r"}
-5:null
+2:I[2908,["756","static/chunks/756-88377c7e2c819e07.js","974","static/chunks/app/page-0897cc2824f0a705.js"],"Medallion"]
+3:I[8500,["756","static/chunks/756-88377c7e2c819e07.js","974","static/chunks/app/page-0897cc2824f0a705.js"],""]
+4:I[484,[],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","section",null,{"children":[["$","h1",null,{"className":"with-mark","children":[["$","$L2",null,{"size":46}],"Pagina nu există"]}],["$","p",null,{"className":"sub","children":"Link-ul poate fi vechi sau scris greșit."}],["$","p",null,{"className":"back","children":["$","$L3",null,{"href":"/","children":"dumitru.me"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GNEdz98_8iP6qDVFHNhAO"}
+6:null

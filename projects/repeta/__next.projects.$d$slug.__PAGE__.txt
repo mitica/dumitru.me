@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-5:I[8500,["500","static/chunks/500-c99b8dfd3de17c86.js","419","static/chunks/app/projects/%5Bslug%5D/page-5d011eba6668cace.js"],""]
+5:I[2908,["756","static/chunks/756-88377c7e2c819e07.js","419","static/chunks/app/projects/%5Bslug%5D/page-ea1a7a59aca807ed.js"],"Medallion"]
 6:I[484,[],"OutletBoundary"]
 7:"$Sreact.suspense"
 2:Tbe7,<p>Repeta este o aplicație de învățare construită în jurul ideii de repetiție inteligentă. Alegi un subiect, răspunzi zilnic la câteva întrebări scurte, iar aplicația readuce informațiile exact atunci când riști să le uiți.</p>
@@ -42,7 +42,7 @@
 
 <h2>Starea actuală</h2>
 <p>Proiectul este activ și în dezvoltare. Direcția este să îmbunătățesc experiența zilnică, să extind subiectele disponibile și să fac aplicația cât mai ușor de folosit pentru oameni care vor să învețe constant, fără să simtă că intră într-un curs formal.</p>
-0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","header",null,{"className":"article-head","children":[["$","p",null,{"className":"dateline article-head__eyebrow","children":"— proiect —"}],["$","h1",null,{"className":"article-head__title","children":["Repeta.app",["$","sup",null,{"children":2026}]]}],["$","p",null,{"className":"article-head__lead","children":"Învățare prin repetiție inteligentă"}]]}],["$","div",null,{"className":"project-meta","children":[["$","div",null,{"className":"project-meta__row","children":[["$","span",null,{"className":"project-meta__label","children":"Stare"}],["$","span",null,{"className":"project-entry__status is-alive","children":"Activ"}]]}],["$","div",null,{"className":"project-meta__row","children":[["$","span",null,{"className":"project-meta__label","children":"An"}],["$","span",null,{"className":"project-meta__value","children":2026}]]}],["$","div",null,{"className":"project-meta__row project-meta__row--links","children":[["$","span",null,{"className":"project-meta__label","children":"Linkuri"}],["$","ul",null,{"className":"project-meta__links","children":[["$","li","https://repeta.app",{"children":["$","a",null,{"href":"https://repeta.app","target":"_blank","rel":"noreferrer","children":["→ ","repeta.app"]}]}]]}]]}]]}],["$","div",null,{"className":"markdown","style":{"marginTop":"2rem"},"dangerouslySetInnerHTML":{"__html":"$2"}}],"$L3"]}],null,"$L4"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6p8Ch88kjviua9XmZsU8r"}
-3:["$","footer",null,{"className":"article-foot","children":["$","$L5",null,{"href":"/projects","className":"project-aside__back","children":"← Înapoi la proiecte"}]}]
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","h1",null,{"children":"Repeta.app"}],["$","p",null,{"className":"sub","children":"Învățare prin repetiție inteligentă"}],["$","p",null,{"className":"meta","children":[["$","span",null,{"children":"în lucru, 2026"}],[["$","a","https://repeta.app",{"href":"https://repeta.app","children":"repeta.app"}]]]}],["$","div",null,{"className":"markdown","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","p",null,{"className":"sign with-mark","children":["$L3","Dumitru Cantea"]}]]}],null,"$L4"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GNEdz98_8iP6qDVFHNhAO"}
+3:["$","$L5",null,{"size":34}]
 4:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null
