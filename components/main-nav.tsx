@@ -4,26 +4,24 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const items = [
-  { num: "01", href: "/projects", label: "Proiecte" },
-  { num: "02", href: "/blog", label: "Blog" }
+  { href: "/blog", label: "Blog" },
+  { href: "/projects", label: "Proiecte" }
 ];
 
 export function MainNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="site-nav" aria-label="Main">
+    <nav className="nav" aria-label="Secțiuni">
       {items.map((item) => {
-        const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`);
+        const isActive =
+          pathname === item.href ||
+          pathname.startsWith(`${item.href}/`) ||
+          (item.href === "/blog" && pathname.startsWith("/tags"));
 
         return (
-          <Link
-            key={item.href}
-            href={item.href}
-            className={["site-nav__link", isActive ? "is-active" : ""].join(" ")}
-          >
-            <span className="site-nav__num">{item.num}</span>
-            <span className="site-nav__label">{item.label}</span>
+          <Link key={item.href} href={item.href} aria-current={isActive ? "page" : undefined}>
+            {item.label}
           </Link>
         );
       })}
