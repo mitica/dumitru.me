@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Portrait } from "@/components/portrait";
 import { ProjectsGrid } from "@/components/projects-grid";
 import { getAllProjects, splitProjectsByStatus } from "@/lib/content";
 
@@ -11,42 +12,20 @@ export default function ProjectsPage() {
 
   return (
     <section>
-      <header className="article-head">
-        <p className="dateline article-head__eyebrow">— portofoliu —</p>
-        <h1 className="article-head__title">Proiecte</h1>
-        <p className="article-head__lead">
-          Lista proiectelor active și a celor închise.
-        </p>
-      </header>
+      <h1 className="with-portrait">
+        <Portrait size={48} />
+        Proiecte
+      </h1>
 
-      <div style={{ marginTop: "2rem" }}>
-        <header className="section-head">
-          <p className="dateline section-head__eyebrow">— curent —</p>
-          <h2 className="section-head__title">
-            Proiecte active{" "}
-            <sup style={{ fontFamily: "var(--mono)", fontSize: "0.55em", color: "var(--accent)" }}>
-              {String(active.length).padStart(2, "0")}
-            </sup>
-          </h2>
-        </header>
+      <section className="block">
+        <h2>În lucru</h2>
         <ProjectsGrid projects={active} />
-      </div>
+      </section>
 
-      <div style={{ marginTop: "2.6rem" }}>
-        <header className="section-head">
-          <p className="dateline section-head__eyebrow">— arhivă —</p>
-          <h2 className="section-head__title">
-            Proiecte inactive{" "}
-            <sup style={{ fontFamily: "var(--mono)", fontSize: "0.55em", color: "var(--muted-strong)" }}>
-              {String(inactive.length).padStart(2, "0")}
-            </sup>
-          </h2>
-        </header>
-        <p className="section-copy" style={{ marginBottom: "0.8rem" }}>
-          Proiectele nereușite m-au învățat la fel de mult ca cele reușite.
-        </p>
+      <section className="block">
+        <h2>Închise</h2>
         <ProjectsGrid projects={inactive} />
-      </div>
+      </section>
     </section>
   );
 }

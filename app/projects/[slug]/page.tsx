@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Portrait } from "@/components/portrait";
 import { getAllProjects, getProjectBySlug } from "@/lib/content";
 
 type ProjectPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+function hostLabel(link: string): string {
+  try {
+    return new URL(link).host.replace(/^www\./, "");
+  } catch {
+    return link.replace(/^https?:\/\//, "");
+  }
+}
 
 export async function generateStaticParams() {
   return getAllProjects().map((project) => ({ slug: project.slug }));
@@ -30,64 +38,27 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     notFound();
   }
 
+  const state = [project.isAlive ? "în lucru" : "închis", project.releaseYear].filter(Boolean).join(", ");
+
   return (
     <article>
-      <header className="article-head">
-        <p className="dateline article-head__eyebrow">— proiect —</p>
-        <h1 className="article-head__title">
-          {project.title}
-          {project.releaseYear ? <sup>{project.releaseYear}</sup> : null}
-        </h1>
-        {project.summary ? <p className="article-head__lead">{project.summary}</p> : null}
-      </header>
+      <h1>{project.title}</h1>
+      {project.summary ? <p className="sub">{project.summary}</p> : null}
+      <p className="meta">
+        <span>{state}</span>
+        {project.links.map((link) => (
+          <a key={link} href={link}>
+            {hostLabel(link)}
+          </a>
+        ))}
+      </p>
 
-      <div className="project-meta">
-        <div className="project-meta__row">
-          <span className="project-meta__label">Stare</span>
-          <span
-            className={[
-              "project-entry__status",
-              project.isAlive ? "is-alive" : "is-retired"
-            ].join(" ")}
-          >
-            {project.isAlive ? "Activ" : "Inactiv"}
-          </span>
-        </div>
+      <div className="markdown" dangerouslySetInnerHTML={{ __html: project.contentHtml }} />
 
-        {project.releaseYear ? (
-          <div className="project-meta__row">
-            <span className="project-meta__label">An</span>
-            <span className="project-meta__value">{project.releaseYear}</span>
-          </div>
-        ) : null}
-
-        {project.links.length > 0 ? (
-          <div className="project-meta__row project-meta__row--links">
-            <span className="project-meta__label">Linkuri</span>
-            <ul className="project-meta__links">
-              {project.links.map((link) => (
-                <li key={link}>
-                  <a href={link} target="_blank" rel="noreferrer">
-                    → {link.replace(/^https?:\/\//, "")}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : null}
-      </div>
-
-      <div
-        className="markdown"
-        style={{ marginTop: "2rem" }}
-        dangerouslySetInnerHTML={{ __html: project.contentHtml }}
-      />
-
-      <footer className="article-foot">
-        <Link href="/projects" className="project-aside__back">
-          ← Înapoi la proiecte
-        </Link>
-      </footer>
+      <p className="sign with-portrait">
+        <Portrait size={36} />
+        Dumitru Cantea
+      </p>
     </article>
   );
 }
