@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fish } from "@/components/fish";
+import { Medallion } from "@/components/medallion";
 import { ProjectsGrid } from "@/components/projects-grid";
 import { getAllProjects, splitProjectsByStatus } from "@/lib/content";
 
@@ -13,7 +13,7 @@ export default function ProjectsPage() {
   return (
     <section>
       <h1 className="with-mark">
-        <Fish width={58} />
+        <Medallion size={46} />
         Proiecte
       </h1>
 

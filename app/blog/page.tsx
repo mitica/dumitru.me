@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fish } from "@/components/fish";
+import { Medallion } from "@/components/medallion";
 import { PostsList } from "@/components/posts-list";
 import { getAllPosts } from "@/lib/content";
 
@@ -14,7 +14,7 @@ export default function BlogPage() {
   return (
     <section>
       <h1 className="with-mark">
-        <Fish width={58} />
+        <Medallion size={46} />
         Blog
       </h1>
       <p className="sub">{count}, de la cea mai nouă.</p>

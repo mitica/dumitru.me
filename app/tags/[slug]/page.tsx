@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Fish } from "@/components/fish";
+import { Medallion } from "@/components/medallion";
 import { PostsList } from "@/components/posts-list";
 import { getPostsByTagSlug, getTags } from "@/lib/content";
 
@@ -37,7 +37,7 @@ export default async function TagPage({ params }: TagPageProps) {
   return (
     <section>
       <h1 className="with-mark">
-        <Fish width={58} />
+        <Medallion size={46} />
         {tag.name}
       </h1>
       <p className="sub">{count}</p>

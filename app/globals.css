@@ -135,7 +135,7 @@ a:focus-visible,
   text-decoration: none;
 }
 
-.fish {
+.medallion {
   display: block;
 }
 
@@ -462,9 +462,9 @@ h1 {
     transform: none;
   }
 
-  .fish {
-    width: 46px;
-    height: auto;
+  .medallion {
+    width: 44px;
+    height: 44px;
   }
 }
 

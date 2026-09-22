@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Fish } from "@/components/fish";
+import { Medallion } from "@/components/medallion";
 import { PostsList } from "@/components/posts-list";
 import { ProjectsGrid } from "@/components/projects-grid";
 import { getAllPosts, getAllProjects, splitProjectsByStatus } from "@/lib/content";
@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <>
       <p className="lede with-mark">
-        <Fish width={72} />
+        <Medallion size={60} />
         Dumitru Cantea. IT engineer. Ce e în lucru, și ce a rămas în urmă.
       </p>
 

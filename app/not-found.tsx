@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { Fish } from "@/components/fish";
+import { Medallion } from "@/components/medallion";
 
 export default function NotFoundPage() {
   return (
     <section>
       <h1 className="with-mark">
-        <Fish width={58} />
+        <Medallion size={46} />
         Pagina nu există
       </h1>
       <p className="sub">Link-ul poate fi vechi sau scris greșit.</p>
