@@ -24,19 +24,18 @@ export function Medallion({ size = 48 }: MedallionProps) {
     >
       <defs>
         <clipPath id={clipId}>
-          <circle cx="32" cy="32" r="29" />
+          <circle cx="32" cy="32" r="32" />
         </clipPath>
       </defs>
       <image
         href="/img/face-mark.jpg"
-        x="1.4"
-        y="1.4"
-        width="61.2"
-        height="61.2"
+        x="0"
+        y="0"
+        width="64"
+        height="64"
         clipPath={`url(#${clipId})`}
         preserveAspectRatio="xMidYMid slice"
       />
-      <circle cx="32" cy="32" r="30.55" fill="none" stroke="currentColor" strokeWidth="1.15" />
     </svg>
   );
 
