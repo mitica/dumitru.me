@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Portrait } from "@/components/portrait";
 import { PostsList } from "@/components/posts-list";
 import { getAllPosts } from "@/lib/content";
 
@@ -8,21 +9,16 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const posts = getAllPosts();
+  const count = posts.length === 1 ? "1 notă" : `${posts.length} note`;
 
   return (
     <section>
-      <header className="article-head">
-        <p className="dateline article-head__eyebrow">— jurnal tehnic —</p>
-        <h1 className="article-head__title">Blog</h1>
-        <p className="article-head__lead">
-          Toate articolele, ordonate de la cel mai nou la cel mai vechi.{" "}
-          <span className="mono" style={{ fontSize: "0.85em", color: "var(--muted-strong)" }}>
-            ({posts.length} ediții)
-          </span>
-        </p>
-      </header>
-
-      <div style={{ marginTop: "1.6rem" }}>
+      <h1 className="with-portrait">
+        <Portrait size={48} />
+        Blog
+      </h1>
+      <p className="sub">{count}, de la cea mai nouă.</p>
+      <div className="block">
         <PostsList posts={posts} />
       </div>
     </section>

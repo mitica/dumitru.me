@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Portrait } from "@/components/portrait";
 import { PostsList } from "@/components/posts-list";
 import { getPostsByTagSlug, getTags } from "@/lib/content";
 
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }: TagPageProps): Promise<Metada
   const tag = getTags().find((item) => item.slug === slug);
 
   return {
-    title: tag ? `Tag: ${tag.name}` : "Tag"
+    title: tag ? tag.name : "Tag"
   };
 }
 
@@ -31,18 +32,16 @@ export default async function TagPage({ params }: TagPageProps) {
   }
 
   const posts = getPostsByTagSlug(slug);
+  const count = tag.count === 1 ? "1 notă" : `${tag.count} note`;
 
   return (
     <section>
-      <header className="article-head">
-        <p className="dateline article-head__eyebrow">— rubrică · tag —</p>
-        <h1 className="article-head__title">{tag.name}</h1>
-        <p className="article-head__meta">
-          {tag.count} {tag.count === 1 ? "articol" : "articole"} cu acest tag
-        </p>
-      </header>
-
-      <div style={{ marginTop: "1.6rem" }}>
+      <h1 className="with-portrait">
+        <Portrait size={48} />
+        {tag.name}
+      </h1>
+      <p className="sub">{count}</p>
+      <div className="block">
         <PostsList posts={posts} />
       </div>
     </section>
