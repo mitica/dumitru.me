@@ -1,7 +1,7 @@
 ---
 title: WebWatch.md
 summary: Webul Moldovei, măsurat în timp real
-isAlive: true
+isAlive: false
 releaseDate: '2026-06-01'
 links:
   - 'https://webwatch.md/'
@@ -63,6 +63,6 @@ Textele editoriale sunt o altă poveste: sunt redactate cu ajutorul AI pe baza d
 
 ## Starea actuală
 
-Proiectul este activ. În prezent monitorizează peste 1.000 de site-uri și oferă, pe lângă scor, un director căutabil al site-urilor din Moldova, jurnale de schimbări din ultimele 24 de ore, mișcările lunare ale scorurilor și diverse perspective de securitate (de exemplu, adoptarea DMARC).
+Proiectul nu mai este activ. A ajuns să monitorizeze peste 1.000 de site-uri și oferea, pe lângă scor, un director căutabil al site-urilor din Moldova, jurnale de schimbări din ultimele 24 de ore, mișcările lunare ale scorurilor și diverse perspective de securitate (de exemplu, adoptarea DMARC).
 
 Pentru mine, WebWatch este răspunsul la „criza existențială” a Top20.md: în loc să caut o nouă formă pentru un clasament vechi, am pornit de la zero, dar de la o idee mult mai onestă — să măsor, nu să presupun.

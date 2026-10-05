@@ -1,7 +1,7 @@
 ---
 title: Repeta.app
 summary: Învățare prin repetiție inteligentă
-isAlive: true
+isAlive: false
 releaseDate: '2026-05-20'
 links:
   - 'https://repeta.app'
@@ -58,4 +58,4 @@ Partea interesantă pentru mine este tensiunea dintre simplitatea interfeței ș
 
 ## Starea actuală
 
-Proiectul este activ și în dezvoltare. Direcția este să îmbunătățesc experiența zilnică, să extind subiectele disponibile și să fac aplicația cât mai ușor de folosit pentru oameni care vor să învețe constant, fără să simtă că intră într-un curs formal.
+Proiectul nu mai este activ.
