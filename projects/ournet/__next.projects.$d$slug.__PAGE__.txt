@@ -1,6 +1,47 @@
 1:"$Sreact.fragment"
-2:I[2908,["756","static/chunks/756-88377c7e2c819e07.js","419","static/chunks/app/projects/%5Bslug%5D/page-ea1a7a59aca807ed.js"],"Medallion"]
-3:I[484,[],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","h1",null,{"children":"Ournet"}],["$","p",null,{"className":"sub","children":"Portal: știri, meteo, horoscop"}],["$","p",null,{"className":"meta","children":[["$","span",null,{"children":"în lucru, 2010"}],[["$","a","https://www.click.md",{"href":"https://www.click.md","children":"click.md"}],["$","a","https://www.ournet.ro",{"href":"https://www.ournet.ro","children":"ournet.ro"}],["$","a","https://www.ournet.es",{"href":"https://www.ournet.es","children":"ournet.es"}],["$","a","https://www.ournet.in",{"href":"https://www.ournet.in","children":"ournet.in"}],["$","a","https://www.our.bg",{"href":"https://www.our.bg","children":"our.bg"}],["$","a","https://www.ournet.hu",{"href":"https://www.ournet.hu","children":"ournet.hu"}],["$","a","https://www.ournet.cz",{"href":"https://www.ournet.cz","children":"ournet.cz"}],["$","a","https://www.hava.one",{"href":"https://www.hava.one","children":"hava.one"}],["$","a","https://www.moti2.al",{"href":"https://www.moti2.al","children":"moti2.al"}],["$","a","https://www.thoi.vn",{"href":"https://www.thoi.vn","children":"thoi.vn"}],["$","a","https://www.meteo.ng",{"href":"https://www.meteo.ng","children":"meteo.ng"}]]]}],["$","div",null,{"className":"markdown","dangerouslySetInnerHTML":{"__html":"<p>Ournet este un portal web format din mai multe proiecte: știri, meteo, horoscop.</p>\n<p>Proiectul pare destul de tipic, dar eu cred că este diferit și interesant. Fiecare parte a portalului este proiect individual interesant.</p>\n<p>Portalul a pornit din R. Moldova (<a href=\"http://www.click.md\">www.click.md</a>) și a fost și este &#39;exportat&#39; în alte țări: România (<a href=\"http://www.ournet.ro\">www.ournet.ro</a>), etc.</p>\n<h2>Starea actuală</h2>\n<p>Acum acesta este proiectul la care lucrez constant(...). Încerc să-l extind pentru alte țări și să-l dizvolt.</p>\n"}}],["$","p",null,{"className":"sign with-mark","children":[["$","$L2",null,{"size":34}],"Dumitru Cantea"]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9MkYf0fkIdMTctV3CeyMP"}
-5:null
+3:I[2908,["756","static/chunks/756-88377c7e2c819e07.js","419","static/chunks/app/projects/%5Bslug%5D/page-ea1a7a59aca807ed.js"],"Medallion"]
+4:I[484,[],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T85a,<p>Ournet este un portal web format din mai multe proiecte: știri, meteo, horoscop.</p>
+<p>Proiectul pare destul de tipic, dar eu cred că este diferit și interesant. Fiecare parte a portalului este proiect individual interesant.</p>
+<p>Portalul a pornit din R. Moldova (<a href="http://www.click.md">www.click.md</a>) și a fost &#39;exportat&#39; în alte țări.</p>
+<h2>Țări</h2>
+<p>Portal complet (știri, meteo, horoscop):</p>
+<ul>
+<li>Republica Moldova — <a href="https://www.click.md">click.md</a> (română și rusă);</li>
+<li>România — <a href="https://www.ournet.ro">ournet.ro</a>;</li>
+<li>Italia — <a href="https://www.ournet.it">ournet.it</a>;</li>
+<li>Ungaria — <a href="https://www.ournet.hu">ournet.hu</a>;</li>
+<li>Bulgaria — <a href="https://www.our.bg">our.bg</a>.</li>
+</ul>
+<p>Doar meteo:</p>
+<ul>
+<li>Albania — <a href="https://www.moti2.al">moti2.al</a>;</li>
+<li>Turcia — <a href="https://www.hava.one">hava.one</a>;</li>
+<li>Vietnam — <a href="https://www.thoi.vn">thoi.vn</a>.</li>
+</ul>
+<p>Restul țărilor (Spania, India, Cehia și alte site-uri meteo) au fost închise.</p>
+<h2>Capturi de ecran</h2>
+<div class="project-screenshots">
+  <figure>
+    <img src="/img/projects/ournet/portal-01.jpg" alt="Ournet.ro - prima pagină a portalului" />
+    <figcaption>Portalul: evenimentul principal al momentului.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/projects/ournet/news-01.jpg" alt="Click.md - ultimele știri și subiectele în tendințe" />
+    <figcaption>Știrile, grupate pe subiecte.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/projects/ournet/meteo-01.jpg" alt="Ournet.ro - vremea în România pe hartă" />
+    <figcaption>Vremea pe hartă, pentru orice localitate.</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/projects/ournet/horoscop-01.jpg" alt="Ournet.ro - horoscopul zilei" />
+    <figcaption>Horoscopul zilei pentru fiecare zodie.</figcaption>
+  </figure>
+</div>
+
+<h2>Starea actuală</h2>
+<p>În toamna lui 2026 am rescris Ournet de la zero, pe un singur server. Detalii: <a href="/blog/ournet-rescris">Ournet, rescris de la zero</a>.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","h1",null,{"children":"Ournet"}],["$","p",null,{"className":"sub","children":"Portal: știri, meteo, horoscop"}],["$","p",null,{"className":"meta","children":[["$","span",null,{"children":"în lucru, 2010"}],[["$","a","https://www.click.md",{"href":"https://www.click.md","children":"click.md"}],["$","a","https://www.ournet.ro",{"href":"https://www.ournet.ro","children":"ournet.ro"}],["$","a","https://www.ournet.it",{"href":"https://www.ournet.it","children":"ournet.it"}],["$","a","https://www.ournet.hu",{"href":"https://www.ournet.hu","children":"ournet.hu"}],["$","a","https://www.our.bg",{"href":"https://www.our.bg","children":"our.bg"}],["$","a","https://www.moti2.al",{"href":"https://www.moti2.al","children":"moti2.al"}],["$","a","https://www.hava.one",{"href":"https://www.hava.one","children":"hava.one"}],["$","a","https://www.thoi.vn",{"href":"https://www.thoi.vn","children":"thoi.vn"}]]]}],["$","div",null,{"className":"markdown","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","p",null,{"className":"sign with-mark","children":[["$","$L3",null,{"size":34}],"Dumitru Cantea"]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"T5F6nvGrdCmYQFJHwzeLd"}
+6:null

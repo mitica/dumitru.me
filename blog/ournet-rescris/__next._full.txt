@@ -1,0 +1,52 @@
+1:"$Sreact.fragment"
+2:I[8500,["756","static/chunks/756-88377c7e2c819e07.js","953","static/chunks/app/blog/%5Bslug%5D/page-0897cc2824f0a705.js"],""]
+3:I[3050,["756","static/chunks/756-88377c7e2c819e07.js","177","static/chunks/app/layout-be9825beffae8d9d.js"],"MainNav"]
+4:I[7121,[],""]
+5:I[4581,[],""]
+6:I[2908,["756","static/chunks/756-88377c7e2c819e07.js","953","static/chunks/app/blog/%5Bslug%5D/page-0897cc2824f0a705.js"],"Medallion"]
+8:I[484,[],"OutletBoundary"]
+9:"$Sreact.suspense"
+c:I[484,[],"ViewportBoundary"]
+e:I[484,[],"MetadataBoundary"]
+10:I[7123,[],"default",1]
+:HL["/_next/static/media/1ae5326f0f7ca785-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/56069e83bb5b2425-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/91601dd83defba07-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/eabb643b88fa58a9-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/cadc639cd0f2360d.css","style"]
+0:{"P":null,"c":["","blog","ournet-rescris",""],"q":"","i":false,"f":[[["",{"children":["blog",{"children":[["slug","ournet-rescris","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/cadc639cd0f2360d.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ro","children":["$","body",null,{"className":"__className_8adf2e","children":[["$","a",null,{"className":"skip","href":"#content","children":"Sari la conținut"}],["$","div",null,{"className":"wrap","children":[["$","header",null,{"className":"top","children":[["$","$L2",null,{"href":"/","className":"word","children":"dumitru.me"}],["$","$L3",null,{}]]}],["$","main",null,{"id":"content","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"children":[["$","h1",null,{"className":"with-mark","children":[["$","$L6",null,{"size":46}],"Pagina nu există"]}],["$","p",null,{"className":"sub","children":"Link-ul poate fi vechi sau scris greșit."}],["$","p",null,{"className":"back","children":["$","$L2",null,{"href":"/","children":"dumitru.me"}]}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","p",null,{"className":"foot","children":"Ialoveni"}]]}]]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L7",null,["$","$L8",null,{"children":["$","$9",null,{"name":"Next.MetadataOutlet","children":"$@a"}]}]]}],{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lc",null,{"children":"$Ld"}],["$","div",null,{"hidden":true,"children":["$","$Le",null,{"children":["$","$9",null,{"name":"Next.Metadata","children":"$Lf"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$10",[]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"T5F6nvGrdCmYQFJHwzeLd"}
+11:[]
+b:"$W11"
+12:Tabf,<p><img src="/img/projects/ournet/portal-01.jpg" alt="Ournet.ro - prima pagină"></p>
+<p><a href="/projects/ournet">Ournet</a> are 16 ani. Codul vechi avea vreo 8: Node 8, React 16, AWS SDK v2, ~60 de pachete npm proprii, vreo 15 procese pe 2–3 servere EC2 și cinci sisteme de date diferite: DynamoDB, MongoDB, Elasticsearch, S3, Redis. Orice schimbare mică însemna 3–4 publicări npm. Nu mai voiam să-l întrețin așa.</p>
+<p>Așa că l-am rescris de la zero. Fără cod copiat — proiectele vechi au rămas doar specificația.</p>
+<h2>Stack</h2>
+<ul>
+<li><strong>un singur pachet Node 24</strong>, TypeScript rulat direct de Node, fără build;</li>
+<li><strong>două procese</strong>: <code>web</code> (paginile) și <code>worker</code> (preluarea știrilor, meteo, horoscop, imagini);</li>
+<li><strong>Postgres 18</strong> — singura bază de date;</li>
+<li>imaginile în <strong>Cloudflare R2</strong>;</li>
+<li><strong>Caddy</strong> în față, <strong>Docker Compose</strong> pentru tot;</li>
+<li>HTML randat pe server, fără framework pe client.</li>
+</ul>
+<p>Entitizer, care extrage subiectele din fiecare știre, nu mai e serviciu separat — e o bibliotecă în același proces. <a href="/projects/entipic">Entipic</a> la fel: a rămas pe <code>cdn.entipic.com</code>, cu aceleași URL-uri, iar imaginile le caută în Wikipedia, Wikidata, Commons, Openverse și, la nevoie, prin SerpAPI.</p>
+<p><img src="/img/projects/ournet/news-01.jpg" alt="Click.md - ultimele știri"></p>
+<h2>Server</h2>
+<p>Un singur server AWS Lightsail în Frankfurt: <strong>2 vCPU și 4 GB RAM</strong>, cu Cloudflare (gratuit) în față. Pe el stau toate: Postgres, web, worker și Caddy. Memoria e împărțită strict: web 350 MB, worker 250 MB, Postgres 1,2 GB. Costul estimat: în jur de 26 $ pe lună, cu tot cu imagini.</p>
+<h2>Ce am tăiat</h2>
+<p>Am păstrat doar ce merită costul:</p>
+<ul>
+<li>portal complet (știri, meteo, horoscop) în <strong>Moldova, România, Italia, Ungaria și Bulgaria</strong>;</li>
+<li>doar meteo în <strong>Albania, Turcia și Vietnam</strong>;</li>
+<li>închise: Spania, India, Cehia, cursul valutar, notificările, newsletter-ul, aplicațiile mobile, widget-urile.</li>
+</ul>
+<p><img src="/img/projects/ournet/meteo-01.jpg" alt="Ournet.ro - vremea în România"></p>
+<h2>Cum</h2>
+<p>L-am construit cu un <a href="/blog/harness-laziar">harness agentic</a>, ca cel de la Laziar: eu decid, agenții scriu cod, un reviewer automat citește fiecare diff. În șase zile: 28 de planuri, 194 de taskuri, peste 250 de commit-uri. Designul e nou, la fel.</p>
+<p><img src="/img/projects/ournet/horoscop-01.jpg" alt="Ournet.ro - horoscopul zilei"></p>
+<p>Ournet e din nou un proiect pe care îl pot ține singur.</p>
+7:["$","article",null,{"children":[["$","h1",null,{"children":"Ournet, rescris de la zero"}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-10-05T12:00:00.000Z","children":"5 octombrie 2026"}]}],["$","div",null,{"className":"markdown","dangerouslySetInnerHTML":{"__html":"$12"}}],["$","p",null,{"className":"sign with-mark","children":[["$","$L6",null,{"size":34}],"Dumitru Cantea"]}],["$","p",null,{"className":"tags","children":[["$","$L2","ournet-rescris-Ournet",{"href":"/tags/ournet","children":"Ournet"}],["$","$L2","ournet-rescris-harness",{"href":"/tags/harness","children":"harness"}],["$","$L2","ournet-rescris-AI",{"href":"/tags/ai","children":"AI"}]]}],["$","nav",null,{"className":"pager","aria-label":"Note vecine","children":[null,["$","$L2",null,{"href":"/blog/harness-laziar","children":"Harnessul care a rămas"}]]}]]}]
+d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+13:I[6869,[],"IconMark"]
+a:null
+f:[["$","title","0",{"children":"Ournet, rescris de la zero | dumitru.me"}],["$","meta","1",{"name":"description","content":"Site personal — Dumitru Cantea"}],["$","link","2",{"rel":"icon","href":"/icon.png?cd5e9b9e20000f7c","type":"image/png","sizes":"32x32"}],["$","link","3",{"rel":"apple-touch-icon","href":"/apple-icon.png?948893c33cad8bf1","type":"image/png","sizes":"180x180"}],["$","$L13","4",{}]]

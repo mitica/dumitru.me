@@ -1,0 +1,36 @@
+1:"$Sreact.fragment"
+3:I[2908,["756","static/chunks/756-88377c7e2c819e07.js","953","static/chunks/app/blog/%5Bslug%5D/page-0897cc2824f0a705.js"],"Medallion"]
+4:I[8500,["756","static/chunks/756-88377c7e2c819e07.js","953","static/chunks/app/blog/%5Bslug%5D/page-0897cc2824f0a705.js"],""]
+6:I[484,[],"OutletBoundary"]
+7:"$Sreact.suspense"
+2:Tabf,<p><img src="/img/projects/ournet/portal-01.jpg" alt="Ournet.ro - prima pagină"></p>
+<p><a href="/projects/ournet">Ournet</a> are 16 ani. Codul vechi avea vreo 8: Node 8, React 16, AWS SDK v2, ~60 de pachete npm proprii, vreo 15 procese pe 2–3 servere EC2 și cinci sisteme de date diferite: DynamoDB, MongoDB, Elasticsearch, S3, Redis. Orice schimbare mică însemna 3–4 publicări npm. Nu mai voiam să-l întrețin așa.</p>
+<p>Așa că l-am rescris de la zero. Fără cod copiat — proiectele vechi au rămas doar specificația.</p>
+<h2>Stack</h2>
+<ul>
+<li><strong>un singur pachet Node 24</strong>, TypeScript rulat direct de Node, fără build;</li>
+<li><strong>două procese</strong>: <code>web</code> (paginile) și <code>worker</code> (preluarea știrilor, meteo, horoscop, imagini);</li>
+<li><strong>Postgres 18</strong> — singura bază de date;</li>
+<li>imaginile în <strong>Cloudflare R2</strong>;</li>
+<li><strong>Caddy</strong> în față, <strong>Docker Compose</strong> pentru tot;</li>
+<li>HTML randat pe server, fără framework pe client.</li>
+</ul>
+<p>Entitizer, care extrage subiectele din fiecare știre, nu mai e serviciu separat — e o bibliotecă în același proces. <a href="/projects/entipic">Entipic</a> la fel: a rămas pe <code>cdn.entipic.com</code>, cu aceleași URL-uri, iar imaginile le caută în Wikipedia, Wikidata, Commons, Openverse și, la nevoie, prin SerpAPI.</p>
+<p><img src="/img/projects/ournet/news-01.jpg" alt="Click.md - ultimele știri"></p>
+<h2>Server</h2>
+<p>Un singur server AWS Lightsail în Frankfurt: <strong>2 vCPU și 4 GB RAM</strong>, cu Cloudflare (gratuit) în față. Pe el stau toate: Postgres, web, worker și Caddy. Memoria e împărțită strict: web 350 MB, worker 250 MB, Postgres 1,2 GB. Costul estimat: în jur de 26 $ pe lună, cu tot cu imagini.</p>
+<h2>Ce am tăiat</h2>
+<p>Am păstrat doar ce merită costul:</p>
+<ul>
+<li>portal complet (știri, meteo, horoscop) în <strong>Moldova, România, Italia, Ungaria și Bulgaria</strong>;</li>
+<li>doar meteo în <strong>Albania, Turcia și Vietnam</strong>;</li>
+<li>închise: Spania, India, Cehia, cursul valutar, notificările, newsletter-ul, aplicațiile mobile, widget-urile.</li>
+</ul>
+<p><img src="/img/projects/ournet/meteo-01.jpg" alt="Ournet.ro - vremea în România"></p>
+<h2>Cum</h2>
+<p>L-am construit cu un <a href="/blog/harness-laziar">harness agentic</a>, ca cel de la Laziar: eu decid, agenții scriu cod, un reviewer automat citește fiecare diff. În șase zile: 28 de planuri, 194 de taskuri, peste 250 de commit-uri. Designul e nou, la fel.</p>
+<p><img src="/img/projects/ournet/horoscop-01.jpg" alt="Ournet.ro - horoscopul zilei"></p>
+<p>Ournet e din nou un proiect pe care îl pot ține singur.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"children":[["$","h1",null,{"children":"Ournet, rescris de la zero"}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-10-05T12:00:00.000Z","children":"5 octombrie 2026"}]}],["$","div",null,{"className":"markdown","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","p",null,{"className":"sign with-mark","children":[["$","$L3",null,{"size":34}],"Dumitru Cantea"]}],["$","p",null,{"className":"tags","children":[["$","$L4","ournet-rescris-Ournet",{"href":"/tags/ournet","children":"Ournet"}],["$","$L4","ournet-rescris-harness",{"href":"/tags/harness","children":"harness"}],["$","$L4","ournet-rescris-AI",{"href":"/tags/ai","children":"AI"}]]}],["$","nav",null,{"className":"pager","aria-label":"Note vecine","children":[null,["$","$L4",null,{"href":"/blog/harness-laziar","children":"Harnessul care a rămas"}]]}]]}],null,"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"T5F6nvGrdCmYQFJHwzeLd"}
+5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null
