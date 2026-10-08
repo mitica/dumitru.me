@@ -43,7 +43,7 @@ Am păstrat doar ce merită costul:
 
 ## Cum
 
-L-am construit cu un [harness agentic](/blog/harness-laziar), ca cel de la Laziar: eu decid, agenții scriu cod, un reviewer automat citește fiecare diff. În șase zile: 28 de planuri, 194 de taskuri, peste 250 de commit-uri. Designul e nou, la fel.
+L-am construit cu un [harness agentic](/blog/harness-laziar), ca cel de la Laziar: eu decid, agenții scriu cod, un reviewer automat citește fiecare diff. De la primul commit la lansare au trecut mai puțin de trei zile: 26 de planuri, 181 de taskuri, peste 200 de commit-uri. Designul e nou, la fel.
 
 ![Ournet.ro - horoscopul zilei](/img/projects/ournet/horoscop-01.jpg)
 
